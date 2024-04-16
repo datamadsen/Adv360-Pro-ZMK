@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -15,6 +16,13 @@
             label = "macro_version";
             #binding-cells = <0>;
             bindings = <&kp RET>;
+        };
+
+        smiley: smiley {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp MINUS &kp RPAR>;
+            label = "SMILEY";
         };
 
         #endif
@@ -38,33 +46,55 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1       &kp N2          &kp N3      &kp N4            &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7             &kp N8      &kp N9           &kp N0               &kp MINUS
-&kp TAB    &kp Q        &kp W           &kp E       &kp R             &kp T   &to 4                                                    &none      &kp Y   &kp U              &kp I       &kp O            &kp P                &kp BSLH
+&kp EQUAL  &kp N1       &kp N2          &kp N3      &kp N4            &kp N5  &tog 3                                                   &mo 5      &kp N6  &kp N7             &kp N8      &kp N9           &kp N0               &kp MINUS
+&kp TAB    &kp Q        &kp W           &kp E       &kp R             &kp T   &to 1                                                    &none      &kp Y   &kp U              &kp I       &kp O            &kp P                &kp BSLH
 &kp ESC    &hm LCTRL A  &hm LEFT_ALT S  &hm LGUI D  &hm LEFT_SHIFT F  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &hm RIGHT_SHIFT J  &hm RGUI K  &hm RIGHT_ALT L  &hm RCTRL SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z        &kp X           &kp C       &kp V             &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M              &kp COMMA   &kp DOT          &kp FSLH             &kp RSHFT
-&mo 2      &kp GRAVE    &kp CAPS        &kp LEFT    &kp RIGHT                 &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN    &kp LBKT         &kp RBKT             &lt 2 ENTER
+&mo 2      &kp GRAVE    &caps_word      &kp LEFT    &kp RIGHT                 &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN    &kp LBKT         &kp RBKT             &lt 2 ENTER
             >;
 
             label = "Mac";
         };
 
-        keypad {
+        windows_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&kp EQUAL  &kp N1      &kp N2          &kp N3       &kp N4            &kp N5  &tog 3                                                   &mo 0      &kp N6  &kp N7             &kp N8       &kp N9      &kp N0               &kp MINUS
+&kp TAB    &kp Q       &kp W           &kp E        &kp R             &kp T   &to 0                                                    &none      &kp Y   &kp U              &kp I        &kp O       &kp P                &kp BSLH
+&kp ESC    &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &hm RIGHT_SHIFT J  &hm LCTRL K  &hm RGUI L  &hm RCTRL SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z       &kp X           &kp C        &kp V             &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M              &kp COMMA    &kp DOT     &kp FSLH             &kp RSHFT
+&mo 3      &kp GRAVE   &caps_word      &kp LEFT     &kp RIGHT                 &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN     &kp LBKT    &kp RBKT             &lt 3 ENTER
+            >;
+
+            label = "Windows";
+        };
+
+        fn_mac {
+            bindings = <
+&kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6         &tog 3                                                   &mo 5                 &kp F7                 &kp F8    &kp F9         &kp F10                  &kp F11  &kp F12
+&trans  &kp LG(Q)  &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)      &none                                                    &kp LG(LS(NUMBER_4))  &kp LS(LG(Y))          &trans    &kp LG(LA(I))  &kp LG(O)                &trans   &smiley
+&trans  &kp A      &kp S      &kp DEL    &mkp MB1   &mkp MB2       &kp LS(LG(X))  &trans        &trans      &trans  &trans  &none                 &kp LEFT               &kp DOWN  &kp UP_ARROW   &kp RIGHT                &trans   &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(V))                               &trans      &trans                                &mt LG(LEFT) LA(LEFT)  &trans    &trans         &mt LG(RIGHT) LA(RIGHT)  &trans   &trans
+&trans  &trans     &trans     &mkp MB4   &mkp MB5                  &kp LS(LGUI)   &kp LS(LALT)  &trans      &trans  &trans  &trans                                       &trans    &trans         &trans                   &trans   &trans
             >;
         };
 
-        fn {
+        fn_windows {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7    &kp F8    &kp F9        &kp F10    &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans    &trans    &trans        &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans    &trans    &trans        &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans        &trans     &trans   &trans
+&kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &tog 3                                                             &mo 0            &kp F7             &kp F8     &kp F9         &kp F10            &kp F11        &kp F12
+&trans  &kp F4     &kp F4     &trans     &kp LC(R)  &kp LC(T)  &kp LG(LC(LA(N5)))                                                 &kp PRINTSCREEN  &kp LC(Y)          &kp LC(U)  &kp LS(LC(I))  &kp LC(O)          &kp LS(LC(P))  &smiley
+&trans  &kp LC(A)  &kp LC(S)  &kp DEL    &mkp MB1   &mkp MB2   &kp LG(LC(LA(N6)))  &trans             &trans      &trans  &trans  &none            &kp LEFT           &kp DOWN   &kp UP_ARROW   &kp RIGHT          &trans         &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &trans     &kp LG(V)                                         &trans      &trans                           &mt HOME LC(LEFT)  &trans     &trans         &mt END LC(RIGHT)  &trans         &trans
+&trans  &trans     &trans     &trans     &trans                &kp LA(LC(LG(Z)))   &kp LA(LC(LG(Y)))  &trans      &trans  &trans  &trans                              &trans     &trans         &trans             &trans         &kp RCTRL
+            >;
+        };
+
+        keypad {
+            bindings = <
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 0      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 5
             >;
         };
 
@@ -78,16 +108,14 @@
             >;
         };
 
-        windows_layer {
+        visual_studio {
             bindings = <
-&kp EQUAL  &kp N1      &kp N2          &kp N3       &kp N4            &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7             &kp N8       &kp N9      &kp N0               &kp MINUS
-&kp TAB    &kp Q       &kp W           &kp E        &kp R             &kp T   &to 0                                                    &none      &kp Y   &kp U              &kp I        &kp O       &kp P                &kp BSLH
-&kp ESC    &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &hm RIGHT_SHIFT J  &hm LCTRL K  &hm RGUI L  &hm RCTRL SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z       &kp X           &kp C        &kp V             &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M              &kp COMMA    &kp DOT     &kp FSLH             &kp RSHFT
-&mo 2      &kp GRAVE   &kp CAPS        &kp LEFT     &kp RIGHT                 &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN     &kp LBKT    &kp RBKT             &lt 2 ENTER
+&kp LS(LC(R))  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5         &kp F6                                                   &kp F7             &kp F8  &kp F9    &kp F10   &kp F11  &kp F12  &kp LC(LA(N1))
+&trans         &trans  &trans  &kp D   &kp R    &kp R          &kp MINUS                                                &trans             &trans  &kp F12   &trans    &trans   &trans   &kp LG(LC(N2))
+&kp LSHFT      &trans  &trans  &trans  &trans   &trans         &trans     &kp F11  &kp LSHFT         &trans     &trans  &trans             &trans  &kp END   &kp HOME  &kp L    &trans   &trans
+&trans         &trans  &trans  &trans  &kp F11  &kp LS(LC(B))                      &kp LA(HOME)      &trans                                &kp F2  &kp BSLH  &trans    &trans   &trans   &trans
+&trans         &trans  &trans  &trans  &trans                  &kp F10    &kp F9   &kp LA(END)       &kp LSHFT  &kp F5  &kp LS(LC(SPACE))          &trans    &trans    &trans   &trans   &kp ENTER
             >;
-
-            label = "Windows";
         };
     };
 };
