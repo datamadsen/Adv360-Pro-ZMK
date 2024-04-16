@@ -25,6 +25,34 @@
             label = "SMILEY";
         };
 
+        vs_close_windows: vs_close_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(W) &kp C>;
+            label = "VS_CLOSE_WINDOWS";
+        };
+
+        vs_git_commit: vs_git_commit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(G) &kp C>;
+            label = "VS_GIT_COMMIT";
+        };
+
+        vs_clean_build: vs_clean_build {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(B) &kp C>;
+            label = "VS_CLEAN_BUILD";
+        };
+
+        vs_git_history: vs_git_history {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(G) &kp H>;
+            label = "VS_GIT_HISTORY";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -61,7 +89,7 @@
 &kp EQUAL  &kp N1      &kp N2          &kp N3       &kp N4            &kp N5  &tog 3                                                   &mo 0      &kp N6  &kp N7             &kp N8       &kp N9      &kp N0               &kp MINUS
 &kp TAB    &kp Q       &kp W           &kp E        &kp R             &kp T   &to 0                                                    &none      &kp Y   &kp U              &kp I        &kp O       &kp P                &kp BSLH
 &kp ESC    &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &hm RIGHT_SHIFT J  &hm LCTRL K  &hm RGUI L  &hm RCTRL SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z       &kp X           &kp C        &kp V             &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M              &kp COMMA    &kp DOT     &kp FSLH             &kp RSHFT
+&mo 6      &kp Z       &kp X           &kp C        &kp V             &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M              &kp COMMA    &kp DOT     &kp FSLH             &kp RSHFT
 &mo 3      &kp GRAVE   &caps_word      &kp LEFT     &kp RIGHT                 &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN     &kp LBKT    &kp RBKT             &lt 3 ENTER
             >;
 
@@ -110,11 +138,11 @@
 
         visual_studio {
             bindings = <
-&kp LS(LC(R))  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5         &kp F6                                                   &kp F7             &kp F8  &kp F9    &kp F10   &kp F11  &kp F12  &kp LC(LA(N1))
-&trans         &trans  &trans  &kp D   &kp R    &kp R          &kp MINUS                                                &trans             &trans  &kp F12   &trans    &trans   &trans   &kp LG(LC(N2))
-&kp LSHFT      &trans  &trans  &trans  &trans   &trans         &trans     &kp F11  &kp LSHFT         &trans     &trans  &trans             &trans  &kp END   &kp HOME  &kp L    &trans   &trans
-&trans         &trans  &trans  &trans  &kp F11  &kp LS(LC(B))                      &kp LA(HOME)      &trans                                &kp F2  &kp BSLH  &trans    &trans   &trans   &trans
-&trans         &trans  &trans  &trans  &trans                  &kp F10    &kp F9   &kp LA(END)       &kp LSHFT  &kp F5  &kp LS(LC(SPACE))          &trans    &trans    &trans   &trans   &kp ENTER
+&kp LS(LC(R))  &kp F1               &kp F2             &kp F3           &kp F4         &kp F5         &kp F6                                                   &kp F7             &kp F8           &kp F9           &kp F10       &kp F11        &kp F12  &kp LC(LA(N1))
+&trans         &trans               &vs_close_windows  &kp LA(LS(D))    &kp LS(LC(R))  &kp LA(LS(R))  &kp MINUS                                                &trans             &trans           &kp LS(LA(F12))  &trans        &trans         &trans   &kp LG(LC(N2))
+&kp LSHFT      &trans               &vs_git_commit     &kp LS(LC(F12))  &kp LC(LS(F))  &kp LC(T)      &trans     &kp F11  &kp LSHFT         &trans     &trans  &trans             &vs_git_history  &kp LA(END)      &kp LA(HOME)  &kp LS(LA(L))  &trans   &trans
+&trans         &kp LC(PAUSE_BREAK)  &trans             &vs_clean_build  &kp F11        &kp LS(LC(B))                      &kp LA(HOME)      &trans                                &kp LS(F2)       &kp LA(BSLH)     &trans        &trans         &trans   &trans
+&trans         &trans               &trans             &trans           &trans                        &kp F10    &kp F9   &kp LA(END)       &kp LSHFT  &kp F5  &kp LS(LC(SPACE))                   &trans           &trans        &trans         &trans   &kp LA(ENTER)
             >;
         };
     };
