@@ -109,7 +109,7 @@
         fn_windows {
             bindings = <
 &kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &tog 3                                                             &mo 0            &kp F7             &kp F8     &kp F9         &kp F10            &kp F11        &kp F12
-&trans  &kp F4     &kp F4     &trans     &kp LC(R)  &kp LC(T)  &kp LG(LC(LA(N5)))                                                 &kp PRINTSCREEN  &kp LC(Y)          &kp LC(U)  &kp LS(LC(I))  &kp LC(O)          &kp LS(LC(P))  &trans
+&trans  &kp F4     &kp F4     &trans     &kp LC(R)  &kp LC(T)  &kp LG(LC(LA(N5)))                                                 &kp PRINTSCREEN  &kp LC(Y)          &kp LC(U)  &kp LS(LC(I))  &kp LC(O)          &kp LS(LC(P))  &smiley
 &trans  &kp LC(A)  &kp LC(S)  &kp DEL    &mkp MB1   &mkp MB2   &kp LG(LC(LA(N6)))  &trans             &trans      &trans  &trans  &none            &kp LEFT           &kp DOWN   &kp UP_ARROW   &kp RIGHT          &trans         &trans
 &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &trans     &kp LG(V)                                         &trans      &trans                           &mt HOME LC(LEFT)  &trans     &trans         &mt END LC(RIGHT)  &trans         &trans
 &trans  &trans     &trans     &trans     &trans                &kp LA(LC(LG(Z)))   &kp LA(LC(LG(Y)))  &trans      &trans  &trans  &trans                              &trans     &trans         &trans             &trans         &kp RCTRL
@@ -138,11 +138,11 @@
 
         visual_studio {
             bindings = <
-&kp LS(LC(R))  &kp F1               &kp F2  &kp F3           &kp F4         &kp F5         &kp F6                                                &kp F7             &kp F8      &kp F9           &kp F10       &kp F11        &kp F12  &kp LC(LA(N1))
-&trans         &trans               &kp W   &kp LA(LS(D))    &kp LS(LC(R))  &kp LA(LS(R))  &kp MINUS                                             &trans             &trans      &kp LS(LA(F12))  &trans        &trans         &trans   &kp LG(LC(N2))
-&kp LSHFT      &trans               &kp C   &kp LS(LC(F12))  &kp LC(LS(F))  &kp LC(T)      &trans     &kp F11  &trans            &trans  &trans  &trans             &kp H       &kp LA(END)      &kp LA(HOME)  &kp LS(LA(L))  &trans   &trans
-&trans         &kp LC(PAUSE_BREAK)  &trans  &kp C            &kp F11        &kp LS(LC(B))                      &kp LA(HOME)      &trans                             &kp LS(F2)  &kp LA(BSLH)     &trans        &trans         &trans   &trans
-&trans         &trans               &trans  &trans           &trans                        &kp F10    &kp F9   &kp LA(END)       &trans  &kp F5  &kp LS(LC(SPACE))              &trans           &trans        &trans         &trans   &kp LA(ENTER)
+&kp LS(LC(R))  &kp F1               &kp F2             &kp F3           &kp F4         &kp F5         &kp F6                                                &kp F7             &kp F8           &kp F9           &kp F10       &kp F11        &kp F12  &kp LC(LA(N1))
+&trans         &trans               &vs_close_windows  &kp LA(LS(D))    &kp LS(LC(R))  &kp LA(LS(R))  &kp MINUS                                             &trans             &trans           &kp LS(LA(F12))  &trans        &trans         &trans   &kp LG(LC(N2))
+&kp LSHFT      &trans               &vs_git_commit     &kp LS(LC(F12))  &kp LC(LS(F))  &kp LC(T)      &trans     &kp F11  &trans            &trans  &trans  &trans             &vs_git_history  &kp LA(END)      &kp LA(HOME)  &kp LS(LA(L))  &trans   &trans
+&trans         &kp LC(PAUSE_BREAK)  &trans             &vs_clean_build  &kp F11        &kp LS(LC(B))                      &kp LA(HOME)      &trans                             &kp LS(F2)       &kp LA(BSLH)     &trans        &trans         &trans   &trans
+&trans         &trans               &trans             &trans           &trans                        &kp F10    &kp F9   &kp LA(END)       &trans  &kp F5  &kp LS(LC(SPACE))                   &trans           &trans        &trans         &trans   &kp LA(ENTER)
             >;
         };
     };
