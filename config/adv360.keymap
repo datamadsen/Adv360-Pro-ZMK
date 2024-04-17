@@ -18,7 +18,9 @@
             bindings = <&kp RET>;
         };
 
-        as_ht: autoshift_hold_tap {
+        #endif
+
+as_ht: autoshift_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP";
             #binding-cells = <2>;
@@ -85,8 +87,6 @@
             bindings = <&kp LA(G) &kp H>;
             label = "VS_GIT_HISTORY";
         };
-
-        #endif
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
