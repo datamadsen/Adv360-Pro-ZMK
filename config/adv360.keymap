@@ -135,11 +135,11 @@
         windows_layer_with_as {
             label = "Windows";
             bindings = <
-&as EQUAL  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &as NUMBER_4  &as N5  &tog 4                                          &mo 0   &as NUMBER_6  &as N7  &as N8     &as N9            &as N0             &as MINUS
-&trans     &as Q         &as W         &as E         &as R         &as T   &to 0                                           &trans  &as Y         &as U   &as I      &as O             &as P              &as NON_US_BACKSLASH
-&trans     &as A         &as S         &as D         &as F         &as G   &caps_word  &trans  &trans      &trans  &trans  &trans  &as H         &as J   &as K      &as L             &as SEMICOLON      &as SQT
-&trans     &as Z         &as X         &as C         &as V         &as B                       &trans      &trans                  &as N         &as M   &as COMMA  &as DOT           &as SLASH          &trans
-&trans     &kp GRAVE     &kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT          &trans      &trans  &trans      &trans  &trans  &trans                &kp UP  &kp DOWN   &as LEFT_BRACKET  &as RIGHT_BRACKET  &trans
+&as EQUAL       &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &as NUMBER_4  &as N5  &tog 4                                                                              &mo 0               &as NUMBER_6  &as N7  &as N8     &as N9            &as N0             &as MINUS
+&kp TAB         &as Q         &as W         &as E         &as R         &as T   &to 0                                                                               &kp LG(L)           &as Y         &as U   &as I      &as O             &as P              &as NON_US_BACKSLASH
+&kp ESCAPE      &as A         &as S         &as D         &as F         &as G   &caps_word           &kp LCTRL     &kp LEFT_ALT      &kp LGUI       &mo 8           &kp LC(LA(DELETE))  &as H         &as J   &as K      &as L             &as SEMICOLON      &as SQT
+&kp LEFT_SHIFT  &as Z         &as X         &as C         &as V         &as B                                      &kp HOME          &kp PAGE_UP                                        &as N         &as M   &as COMMA  &as DOT           &as SLASH          &mo 7
+&mo 4           &kp GRAVE     &kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT          &mt LCTRL BACKSPACE  &mt LGUI DEL  &kp END           &kp PAGE_DOWN  &mt LGUI ENTER  &mt LCTRL SPACE                   &kp UP  &kp DOWN   &as LEFT_BRACKET  &as RIGHT_BRACKET  &lt 4 ENTER
             >;
         };
 
