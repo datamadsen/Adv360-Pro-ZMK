@@ -155,11 +155,11 @@
 
         fn_windows {
             bindings = <
-&kp F1             &kp F2      &kp F3      &kp F4     &kp F5     &kp F6     &tog 4                                                         &mo 0            &kp F7             &kp F8     &kp F9         &kp F10            &kp F11        &kp F12
-&kp F13            &kp LA(F4)  &kp LC(F4)  &trans     &kp LC(R)  &kp LC(T)  &kp LG(LC(LA(N5)))                                             &kp PRINTSCREEN  &kp LC(Y)          &kp LC(U)  &kp LS(LC(I))  &kp LC(O)          &kp LS(LC(P))  &smiley
-&trans             &kp LC(A)   &kp LC(S)   &kp DEL    &mkp MB1   &mkp MB2   &kp LG(LC(LA(N6)))  &trans  &trans      &trans  &trans         &none            &kp LEFT           &kp DOWN   &kp UP_ARROW   &kp RIGHT          &trans         &trans
-&kp LA(LG(LC(Y)))  &kp LC(Z)   &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp LG(V)                              &trans      &trans                                  &mt HOME LC(LEFT)  &trans     &trans         &mt END LC(RIGHT)  &trans         &trans
-&kp LA(LC(LG(Z)))  &trans      &trans      &trans     &trans                &none               &none   &trans      &trans  &kp LC(ENTER)  &trans                              &trans     &trans         &trans             &trans         &kp RCTRL
+&kp F1             &kp F2      &kp F3      &kp F4     &kp F5     &kp F6     &tog 4                                                         &mo 0            &kp F7     &kp F8     &kp F9            &kp F10            &kp F11        &kp F12
+&kp F13            &kp LA(F4)  &kp LC(F4)  &trans     &kp LC(R)  &kp LC(T)  &kp LG(LC(LA(N5)))                                             &kp PRINTSCREEN  &kp LC(Y)  &kp LC(U)  &kp LS(LC(I))     &kp LC(O)          &kp LS(LC(P))  &smiley
+&trans             &kp LC(A)   &kp LC(S)   &mkp MB3   &mkp MB1   &mkp MB2   &kp LG(LC(LA(N6)))  &trans  &trans      &trans  &trans         &none            &kp LC(H)  &kp LC(J)  &kp LC(K)         &kp LC(L)          &trans         &trans
+&kp LA(LG(LC(Y)))  &kp LC(Z)   &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp LG(V)                              &trans      &trans                                  &kp LC(N)  &kp LC(M)  &as LEFT_BRACKET  &as RIGHT_BRACKET  &trans         &trans
+&kp LA(LC(LG(Z)))  &trans      &trans      &mkp MB4   &mkp MB5              &none               &none   &trans      &trans  &kp LC(ENTER)  &trans                      &trans     &trans            &trans             &trans         &kp RCTRL
             >;
         };
 
