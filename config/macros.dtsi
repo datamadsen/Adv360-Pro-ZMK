@@ -34,37 +34,3 @@
     #binding-cells = <0>;
     bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
   };
-        smiley: smiley {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp MINUS &kp RPAR>;
-            label = "SMILEY";
-        };
-
-        vs_close_windows: vs_close_windows {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(W) &kp C>;
-            label = "VS_CLOSE_WINDOWS";
-        };
-
-        vs_git_commit: vs_git_commit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(G) &kp C>;
-            label = "VS_GIT_COMMIT";
-        };
-
-        vs_clean_build: vs_clean_build {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(B) &kp C>;
-            label = "VS_CLEAN_BUILD";
-        };
-
-        vs_git_history: vs_git_history {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(G) &kp H>;
-            label = "VS_GIT_HISTORY";
-        };
