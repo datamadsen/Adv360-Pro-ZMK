@@ -139,7 +139,7 @@
 &kp TAB         &as Q         &as W         &as E         &as R         &as T   &to 0                                                                           &kp LG(L)           &as Y         &as U   &as I      &as O             &as P              &as NON_US_BACKSLASH
 &kp ESCAPE      &as A         &as S         &as D         &as F         &as G   &none            &kp LCTRL     &kp LEFT_ALT      &kp LGUI       &mo 8           &kp LC(LA(DELETE))  &as H         &as J   &as K      &as L             &as SEMICOLON      &as SQT
 &kp LEFT_SHIFT  &as Z         &as X         &as C         &as V         &as B                                  &kp HOME          &kp PAGE_UP                                        &as N         &as M   &as COMMA  &as DOT           &as SLASH          &mo 7
-&mo 4           &as GRAVE     &caps_word    &kp LEFT      &kp RIGHT             &lt 4 BACKSPACE  &mt LGUI DEL  &kp END           &kp PAGE_DOWN  &mt LGUI ENTER  &mt LCTRL SPACE                   &kp UP  &kp DOWN   &as LEFT_BRACKET  &as RIGHT_BRACKET  &lt 4 ENTER
+&kp LCTRL       &as GRAVE     &caps_word    &kp LEFT      &kp RIGHT             &lt 4 BACKSPACE  &mt LGUI DEL  &kp END           &kp PAGE_DOWN  &mt LGUI ENTER  &kp SPACE                         &kp UP  &kp DOWN   &as LEFT_BRACKET  &as RIGHT_BRACKET  &mt LCTRL ENTER
             >;
         };
 
