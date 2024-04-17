@@ -135,7 +135,7 @@
         windows_layer_with_as {
             label = "Windows";
             bindings = <
-&kp EQUAL  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &as NUMBER_4  &as N5  &tog 4                                                        &mo 0            &as NUMBER_6  &as N7  &as N8     &as N9            &as N0             &as MINUS
+&as EQUAL  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &as NUMBER_4  &as N5  &tog 4                                                        &mo 0            &as NUMBER_6  &as N7  &as N8     &as N9            &as N0             &as MINUS
 &kp TAB    &as Q         &as W         &as E         &as R         &as T   &to 0                                                         &kp LA(LC(DEL))  &as Y         &as U   &as I      &as O             &as P              &as NON_US_BACKSLASH
 &kp ESC    &as A         &as S         &as D         &as F         &as G   &none     &kp LCTRL  &as LG(SQT)      &as LG(SQT)  &mo 8      &kp LG(L)        &as H         &as J   &as K      &as L             &as SEMICOLON      &as SQT
 &mo 7      &as Z         &as X         &as C         &as V         &as B                        &as LG(O)        &as LG(O)                                &as N         &as M   &as COMMA  &as DOT           &as SLASH          &kp RSHFT
@@ -186,7 +186,7 @@
         visual_studio {
             bindings = <
 &kp LS(LC(R))  &kp F1               &kp F2             &kp F3           &kp F4         &kp F5         &kp F6                                                &kp F7             &kp F8           &kp F9           &kp F10       &kp F11        &kp F12  &kp LC(LA(N1))
-&trans         &trans               &vs_close_windows  &kp LA(LS(D))    &kp LS(LC(R))  &kp LA(LS(R))  &kp MINUS                                             &trans             &trans           &kp LS(LA(F12))  &trans        &trans         &trans   &kp LG(LC(N2))
+&trans         &trans               &vs_close_windows  &kp LA(LS(D))    &kp LS(LC(R))  &kp LA(LS(R))  &kp MINUS                                             &trans             &trans           &kp LS(LA(F12))  &trans        &trans         &trans   &kp LC(LA(N2))
 &kp LSHFT      &trans               &vs_git_commit     &kp LS(LC(F12))  &kp LC(LS(F))  &kp LC(T)      &trans     &kp F11  &trans            &trans  &trans  &trans             &vs_git_history  &kp LA(END)      &kp LA(HOME)  &kp LS(LA(L))  &trans   &trans
 &trans         &kp LC(PAUSE_BREAK)  &trans             &vs_clean_build  &kp F11        &kp LS(LC(B))                      &kp LA(HOME)      &trans                             &kp LS(F2)       &kp LA(BSLH)     &trans        &trans         &trans   &trans
 &trans         &trans               &trans             &trans           &trans                        &kp F10    &kp F9   &kp LA(END)       &trans  &kp F5  &kp LS(LC(SPACE))                   &trans           &trans        &trans         &trans   &kp LA(ENTER)
