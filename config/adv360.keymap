@@ -135,11 +135,11 @@
         windows_layer_with_as {
             label = "Windows";
             bindings = <
-&as EQUAL  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &as NUMBER_4  &as N5  &tog 4                                                        &mo 0            &as NUMBER_6  &as N7  &as N8     &as N9            &as N0             &as MINUS
-&kp TAB    &as Q         &as W         &as E         &as R         &as T   &to 0                                                         &kp LA(LC(DEL))  &as Y         &as U   &as I      &as O             &as P              &as NON_US_BACKSLASH
-&kp ESC    &as A         &as S         &as D         &as F         &as G   &none     &kp LCTRL  &as LG(SQT)      &as LG(SQT)  &mo 8      &kp LG(L)        &as H         &as J   &as K      &as L             &as SEMICOLON      &as SQT
-&mo 7      &as Z         &as X         &as C         &as V         &as B                        &as LG(O)        &as LG(O)                                &as N         &as M   &as COMMA  &as DOT           &as SLASH          &kp RSHFT
-&mo 4      &kp GRAVE     &caps_word    &kp LEFT_ALT  &mo 4                 &kp BSPC  &kp DEL    &as LG(A)        &as LG(A)    &kp ENTER  &kp SPACE                      &kp UP  &kp DOWN   &as LEFT_BRACKET  &as RIGHT_BRACKET  &lt 4 ENTER
+&as EQUAL  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &as NUMBER_4  &as N5  &tog 4                                                          &mo 0            &as NUMBER_6  &as N7  &as N8     &as N9            &as N0             &as MINUS
+&kp TAB    &as Q         &as W         &as E         &as R         &as T   &to 0                                                           &kp LA(LC(DEL))  &as Y         &as U   &as I      &as O             &as P              &as NON_US_BACKSLASH
+&kp ESC    &as A         &as S         &as D         &as F         &as G   &caps_word  &kp LCTRL  &as LG(SQT)      &as LG(SQT)  &mo 8      &kp LG(L)        &as H         &as J   &as K      &as L             &as SEMICOLON      &as SQT
+&mo 7      &as Z         &as X         &as C         &as V         &as B                          &as LG(O)        &as LG(O)                                &as N         &as M   &as COMMA  &as DOT           &as SLASH          &kp RSHFT
+&mo 4      &kp GRAVE     &kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT          &kp BSPC    &kp DEL    &as LG(A)        &as LG(A)    &kp ENTER  &kp SPACE                      &kp UP  &kp DOWN   &as LEFT_BRACKET  &as RIGHT_BRACKET  &lt 4 ENTER
             >;
         };
 
