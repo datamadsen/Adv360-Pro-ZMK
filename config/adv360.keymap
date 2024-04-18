@@ -115,16 +115,15 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        mac {
+            label = "mac";
             bindings = <
-&kp EQUAL  &kp N1       &kp N2          &kp N3      &kp N4            &kp N5  &tog 5                                                   &mo 7      &kp N6  &kp N7             &kp N8      &kp N9           &kp N0               &kp MINUS
-&kp TAB    &kp Q        &kp W           &kp E       &kp R             &kp T   &to 1                                                    &none      &kp Y   &kp U              &kp I       &kp O            &kp P                &kp BSLH
-&kp ESC    &hm LCTRL A  &hm LEFT_ALT S  &hm LGUI D  &hm LEFT_SHIFT F  &kp G   &to 3     &kp LCTRL  &kp LALT      &mo 9      &kp RCTRL  &none      &kp H   &hm RIGHT_SHIFT J  &hm RGUI K  &hm RIGHT_ALT L  &hm RCTRL SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z        &kp X           &kp C       &kp V             &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M              &kp COMMA   &kp DOT          &kp FSLH             &kp RSHFT
-&mo 4      &kp GRAVE    &caps_word      &kp LEFT    &kp RIGHT                 &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN    &kp LBKT         &kp RBKT             &lt 4 ENTER
+&as EQUAL       &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 5                                                                       &mo 7               &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB         &kp Q      &kp W       &kp E     &kp R      &kp T   &to 3                                                                        &kp LG(L)           &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC         &kp A      &kp S       &kp D     &kp F      &kp G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 9           &kp LC(LA(DELETE))  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z      &kp X       &kp C     &kp V      &kp B                               &kp HOME          &kp PAGE_UP                                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&kp LCTRL       &as GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &lt 4 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &mt LGUI ENTER  &kp SPACE                   &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mt LCTRL ENTER
             >;
-
-            label = "Mac";
         };
 
         windows_layer {
@@ -163,21 +162,21 @@
 
         fn_mac {
             bindings = <
-&kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6         &tog 5                                                   &mo 7                 &kp F7                 &kp F8    &kp F9         &kp F10                  &kp F11  &kp F12
-&trans  &kp LG(Q)  &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)      &none                                                    &kp LG(LS(NUMBER_4))  &kp LS(LG(Y))          &trans    &kp LG(LA(I))  &kp LG(O)                &trans   &smiley
-&trans  &kp LG(A)  &kp LG(S)  &kp DEL    &mkp MB1   &mkp MB2       &kp LS(LG(X))  &trans        &trans      &trans  &trans  &none                 &kp LEFT               &kp DOWN  &kp UP_ARROW   &kp RIGHT                &trans   &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(V))                               &trans      &trans                                &mt LG(LEFT) LA(LEFT)  &trans    &trans         &mt LG(RIGHT) LA(RIGHT)  &trans   &trans
-&trans  &trans     &trans     &mkp MB4   &mkp MB5                  &kp LS(LGUI)   &kp LS(LALT)  &trans      &trans  &trans  &trans                                       &trans    &trans         &trans                   &trans   &trans
+&kp F1        &kp F2     &kp F3     &kp F4     &kp F5     &kp F6         &tog 5                                                &mo 7              &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans        &kp LG(Q)  &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)      &none                                                 &none              &none   &trans  &none   &none    &trans   &smiley
+&trans        &kp LA(A)  &kp LG(S)  &mkp MB3   &mkp MB1   &mkp MB2       &kp LS(LG(X))  &trans  &trans      &trans  &trans     &none              &none   &none   &none   &none    &trans   &trans
+&kp LS(LALT)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(V))                         &trans      &trans                                &none   &trans  &trans  &none    &trans   &trans
+&kp LS(LGUI)  &trans     &trans     &mkp MB4   &mkp MB5                  &none          &none   &trans      &trans  &kp GRAVE  &kp DOUBLE_QUOTES          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
         fn_windows {
             bindings = <
-&kp TILDE          &kp F1      &kp F2      &kp F3     &kp F4          &kp F5     &kp LC(LS(R))                                                  &mo 0              &kp F6  &kp F7   &kp F8                &kp F9                 &kp F10        &kp F11
-&kp F13            &kp LA(F4)  &kp LC(F4)  &trans     &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                             &kp PRINTSCREEN    &none   &none    &kp LEFT_BRACE        &kp LG(O)              &kp LS(LC(P))  &kp F12
-&trans             &kp LG(A)   &kp LC(S)   &mkp MB3   &mkp MB1        &mkp MB2   &kp LG(LC(LA(N6)))  &trans  &trans      &trans  &trans         &none              &none   &none    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &equal_lt      &kp LG(SQT)
-&kp LA(LG(LC(Y)))  &kp LC(Z)   &kp LC(X)   &kp LC(C)  &kp LS(INSERT)  &kp LG(V)                              &trans      &trans                                    &none   &none    &as LEFT_BRACKET      &as RIGHT_BRACKET      &trans         &trans
-&kp LA(LC(LG(Z)))  &trans      &trans      &mkp MB4   &mkp MB5                   &none               &none   &trans      &trans  &kp LC(GRAVE)  &kp DOUBLE_QUOTES          &smiley  &trans                &trans                 &trans         &kp RCTRL
+&kp TILDE          &kp F1      &kp F2      &kp F3     &kp F4          &kp F5     &kp LC(LS(R))                                              &mo 7              &kp F6  &kp F7   &kp F8                &kp F9                 &kp F10        &kp F11
+&kp F13            &kp LA(F4)  &kp LC(F4)  &trans     &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                         &kp PRINTSCREEN    &none   &none    &kp LEFT_BRACE        &kp LG(O)              &kp LS(LC(P))  &kp F12
+&trans             &kp LG(A)   &kp LC(S)   &mkp MB3   &mkp MB1        &mkp MB2   &kp LG(LC(LA(N6)))  &trans  &trans      &trans  &trans     &none              &none   &none    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &equal_lt      &kp LG(SQT)
+&kp LA(LG(LC(Y)))  &kp LC(Z)   &kp LC(X)   &kp LC(C)  &kp LS(INSERT)  &kp LG(V)                              &trans      &trans                                &none   &none    &as LEFT_BRACKET      &as RIGHT_BRACKET      &trans         &trans
+&kp LA(LC(LG(Z)))  &trans      &trans      &mkp MB4   &mkp MB5                   &none               &none   &trans      &trans  &kp GRAVE  &kp DOUBLE_QUOTES          &smiley  &trans                &trans                 &trans         &kp RCTRL
             >;
         };
 
