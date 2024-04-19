@@ -123,7 +123,7 @@
 &kp TAB         &kp Q      &kp W       &kp E     &kp R      &kp T   &to 1                                                                   &kp LG(L)           &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC         &kp A      &kp S       &kp D     &kp F      &kp G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 11     &kp LC(LA(DELETE))  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z      &kp X       &kp C     &kp V      &kp B                               &kp HOME          &kp PAGE_UP                                   &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&kp LCTRL       &as GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &lt 6 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kp ENTER  &kp SPACE                   &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mt LCTRL ENTER
+&kp LCTRL       &as GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &lt 6 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kp ENTER  &kp SPACE                   &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mt LGUI ENTER
             >;
         };
 
@@ -134,7 +134,7 @@
 &kp TAB         &as Q      &as W       &as E     &as R      &as T   &to 2                                                                   &kp LG(L)           &as Y   &as U   &as I      &as O     &as P     &as BSLH
 &kp ESC         &as A      &as S       &as D     &as F      &as G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 11     &kp LC(LA(DELETE))  &as H   &as J   &as K      &as L     &as SEMI  &as SQT
 &kp LEFT_SHIFT  &as Z      &as X       &as C     &as V      &as B                               &kp HOME          &kp PAGE_UP                                   &as N   &as M   &as COMMA  &as DOT   &as FSLH  &kp RSHFT
-&kp LCTRL       &as GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &lt 6 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kt ENTER  &kp SPACE                   &kp UP  &kp DOWN   &as LBKT  &as RBKT  &mt LCTRL ENTER
+&kp LCTRL       &as GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &lt 6 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kt ENTER  &kp SPACE                   &kp UP  &kp DOWN   &as LBKT  &as RBKT  &mt LGUI ENTER
             >;
         };
 
@@ -145,7 +145,7 @@
 &kp TAB         &kp Q        &kp W           &kp E       &kp R             &kp T   &to 3                                                                   &kp LG(L)           &kp Y   &kp U             &kp I       &kp O           &kp P                &kp BSLH
 &kp ESC         &mt LCTRL A  &mt LEFT_ALT S  &mt LGUI D  &mt LEFT_SHIFT F  &kp G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 11     &kp LC(LA(DELETE))  &kp H   &mt LEFT_SHIFT J  &mt LGUI K  &mt LEFT_ALT L  &mt LCTRL SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z        &kp X           &kp C       &kp V             &kp B                               &kp HOME          &kp PAGE_UP                                   &kp N   &kp M             &kp COMMA   &kp DOT         &kp FSLH             &kp RSHFT
-&kp LCTRL       &as GRAVE    &caps_word      &kp LEFT    &kp RIGHT                 &lt 6 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kt ENTER  &kp SPACE                   &kp UP            &kp DOWN    &kp LBKT        &kp RBKT             &mt LCTRL ENTER
+&kp LCTRL       &as GRAVE    &caps_word      &kp LEFT    &kp RIGHT                 &lt 6 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kt ENTER  &kp SPACE                   &kp UP            &kp DOWN    &kp LBKT        &kp RBKT             &mt LEFT_GUI ENTER
             >;
         };
 
