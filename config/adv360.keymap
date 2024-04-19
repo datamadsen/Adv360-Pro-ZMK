@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -119,73 +118,28 @@
         mac {
             label = "mac";
             bindings = <
-&as EQUAL       &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 7                                                                  &mo 9               &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&as EQUAL       &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 3                                                                  &mo 5               &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB         &kp Q      &kp W       &kp E     &kp R      &kp T   &to 1                                                                   &kp LG(L)           &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC         &kp A      &kp S       &kp D     &kp F      &kp G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 11     &kp LC(LA(DELETE))  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp ESC         &kp A      &kp S       &kp D     &kp F      &kp G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 7      &kp LC(LA(DELETE))  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z      &kp X       &kp C     &kp V      &kp B                               &kp HOME          &kp PAGE_UP                                   &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&kp LCTRL       &as GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &lt 6 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kp ENTER  &kp SPACE                   &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mt LGUI ENTER
-            >;
-        };
-
-        mac_with_as {
-            label = "mac";
-            bindings = <
-&as EQUAL       &as N1     &as N2      &as N3    &as N4     &as N5  &tog 7                                                                  &mo 9               &as N6  &as N7  &as N8     &as N9    &as N0    &as MINUS
-&kp TAB         &as Q      &as W       &as E     &as R      &as T   &to 2                                                                   &kp LG(L)           &as Y   &as U   &as I      &as O     &as P     &as BSLH
-&kp ESC         &as A      &as S       &as D     &as F      &as G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 11     &kp LC(LA(DELETE))  &as H   &as J   &as K      &as L     &as SEMI  &as SQT
-&kp LEFT_SHIFT  &as Z      &as X       &as C     &as V      &as B                               &kp HOME          &kp PAGE_UP                                   &as N   &as M   &as COMMA  &as DOT   &as FSLH  &kp RSHFT
-&kp LCTRL       &as GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &lt 6 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kt ENTER  &kp SPACE                   &kp UP  &kp DOWN   &as LBKT  &as RBKT  &mt LGUI ENTER
-            >;
-        };
-
-        mac_home_row_mods {
-            label = "mac";
-            bindings = <
-&as EQUAL       &kp N1       &kp N2          &kp N3      &kp N4            &kp N5  &tog 7                                                                  &mo 9               &kp N6  &kp N7            &kp N8      &kp N9          &kp N0               &kp MINUS
-&kp TAB         &kp Q        &kp W           &kp E       &kp R             &kp T   &to 3                                                                   &kp LG(L)           &kp Y   &kp U             &kp I       &kp O           &kp P                &kp BSLH
-&kp ESC         &mt LCTRL A  &mt LEFT_ALT S  &mt LGUI D  &mt LEFT_SHIFT F  &kp G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 11     &kp LC(LA(DELETE))  &kp H   &mt LEFT_SHIFT J  &mt LGUI K  &mt LEFT_ALT L  &mt LCTRL SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z        &kp X           &kp C       &kp V             &kp B                               &kp HOME          &kp PAGE_UP                                   &kp N   &kp M             &kp COMMA   &kp DOT         &kp FSLH             &kp RSHFT
-&kp LCTRL       &as GRAVE    &caps_word      &kp LEFT    &kp RIGHT                 &lt 6 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kt ENTER  &kp SPACE                   &kp UP            &kp DOWN    &kp LBKT        &kp RBKT             &mt LEFT_GUI ENTER
+&kp LCTRL       &as GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &lt 2 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kp ENTER  &kp SPACE                   &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mt LGUI ENTER
             >;
         };
 
         windows {
             label = "Windows";
             bindings = <
-&as EQUAL       &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 7                                                                       &mo 0               &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB         &kp Q      &kp W       &kp E     &kp R      &kp T   &to 4                                                                        &kp LG(L)           &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC         &kp A      &kp S       &kp D     &kp F      &kp G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 11          &kp LC(LA(DELETE))  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&as EQUAL       &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 3                                                                       &mo 0               &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB         &kp Q      &kp W       &kp E     &kp R      &kp T   &to 0                                                                        &kp LG(L)           &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC         &kp A      &kp S       &kp D     &kp F      &kp G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 7           &kp LC(LA(DELETE))  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z      &kp X       &kp C     &kp V      &kp B                               &kp HOME          &kp PAGE_UP                                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&kp LCTRL       &as GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &lt 7 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &mt LGUI ENTER  &kp SPACE                   &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mt LCTRL ENTER
+&kp LCTRL       &as GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &lt 3 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &mt LGUI ENTER  &kp SPACE                   &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mt LCTRL ENTER
             >;
-        };
-
-        windows_with_as {
-            label = "Windows";
-            bindings = <
-&as EQUAL       &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &as NUMBER_4  &as N5  &tog 7                                                                          &mo 0               &as NUMBER_6  &as N7  &as N8     &as N9            &as N0             &as MINUS
-&kp TAB         &as Q         &as W         &as E         &as R         &as T   &to 5                                                                           &kp LG(L)           &as Y         &as U   &as I      &as O             &as P              &as NON_US_BACKSLASH
-&kp ESCAPE      &as A         &as S         &as D         &as F         &as G   &none            &kp LCTRL     &kp LEFT_ALT      &kp LGUI       &mo 11          &kp LC(LA(DELETE))  &as H         &as J   &as K      &as L             &as SEMICOLON      &as SQT
-&kp LEFT_SHIFT  &as Z         &as X         &as C         &as V         &as B                                  &kp HOME          &kp PAGE_UP                                        &as N         &as M   &as COMMA  &as DOT           &as SLASH          &mo 10
-&kp LCTRL       &as GRAVE     &caps_word    &kp LEFT      &kp RIGHT             &lt 7 BACKSPACE  &mt LGUI DEL  &kp END           &kp PAGE_DOWN  &mt LGUI ENTER  &kp SPACE                         &kp UP  &kp DOWN   &as LEFT_BRACKET  &as RIGHT_BRACKET  &mt LCTRL ENTER
-            >;
-        };
-
-        windows_home_row_mods {
-            bindings = <
-&kp EQUAL       &kp N1      &kp N2          &kp N3       &kp N4            &kp N5  &tog 7                                                          &mo 0            &kp N6  &kp N7             &kp N8       &kp N9      &kp N0              &kp MINUS
-&kp TAB         &kp Q       &kp W           &kp E        &kp R             &kp T   &to 0                                                           &kp LG(L)        &kp Y   &kp U              &kp I        &kp O       &kp P               &kp BSLH
-&kp ESC         &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G   &none            &kp LCTRL  &kp LALT      &mo 11     &kp RCTRL  &kp LC(LA(DEL))  &kp H   &hm RIGHT_SHIFT J  &hm LCTRL K  &hm LALT L  &hm RGUI SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z       &kp X           &kp C        &kp V             &kp B                               &kp HOME      &kp PG_UP                              &kp N   &kp M              &kp COMMA    &kp DOT     &kp FSLH            &mo 10
-&kp LCTRL       &kp GRAVE   &caps_word      &kp LEFT     &kp RIGHT                 &lt 7 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                &kp UP             &kp DOWN     &kp LBKT    &kp RBKT            &lt 7 ENTER
-            >;
-
-            label = "Windows";
         };
 
         fn_mac {
             bindings = <
-&kp F1        &kp F2     &kp F3     &kp F4     &kp F5     &kp F6         &tog 7                                              &mo 9          &kp F7  &kp F8  &kp F9  &kp F10    &kp F11  &kp F12
+&kp F1        &kp F2     &kp F3     &kp F4     &kp F5     &kp F6         &tog 3                                              &mo 5          &kp F7  &kp F8  &kp F9  &kp F10    &kp F11  &kp F12
 &kp GRAVE     &kp LG(Q)  &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)      &none                                               &none          &none   &trans  &none   &kp LA(O)  &trans   &smiley
 &trans        &kp LA(A)  &kp LG(S)  &mkp MB3   &mkp MB1   &mkp MB2       &kp LS(LG(X))  &trans  &trans      &trans  &trans   &none          &none   &none   &none   &none      &trans   &kp LA(SQT)
 &kp LS(LALT)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(V))                         &trans      &trans                          &none   &trans  &trans  &none      &trans   &trans
@@ -195,7 +149,7 @@
 
         fn_windows {
             bindings = <
-&kp TILDE          &kp F1      &kp F2      &kp F3     &kp F4          &kp F5     &kp LC(LS(R))                                              &mo 9              &kp F6  &kp F7   &kp F8                &kp F9                 &kp F10        &kp F11
+&kp TILDE          &kp F1      &kp F2      &kp F3     &kp F4          &kp F5     &kp LC(LS(R))                                              &mo 5              &kp F6  &kp F7   &kp F8                &kp F9                 &kp F10        &kp F11
 &kp F13            &kp LA(F4)  &kp LC(F4)  &trans     &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                         &kp PRINTSCREEN    &none   &none    &kp LEFT_BRACE        &kp LG(O)              &kp LS(LC(P))  &kp F12
 &trans             &kp LG(A)   &kp LC(S)   &mkp MB3   &mkp MB1        &mkp MB2   &kp LG(LC(LA(N6)))  &trans  &trans      &trans  &trans     &none              &none   &none    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &equal_lt      &kp LG(SQT)
 &kp LA(LG(LC(Y)))  &kp LC(Z)   &kp LC(X)   &kp LC(C)  &kp LS(INSERT)  &kp LG(V)                              &trans      &trans                                &none   &none    &as LEFT_BRACKET      &as RIGHT_BRACKET      &trans         &trans
@@ -209,7 +163,7 @@
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 9      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 9
+&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 5
             >;
         };
 
