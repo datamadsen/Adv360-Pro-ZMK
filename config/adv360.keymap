@@ -7,7 +7,7 @@
 
 / {
     behaviors {
-        #include "macros.dtsi"
+      #include "macros.dtsi"
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
@@ -112,7 +112,7 @@
             label = "MACRO_SQUARE";
         };
 
-        macro_curly: macro_square {
+        macro_curly: macro_curly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
