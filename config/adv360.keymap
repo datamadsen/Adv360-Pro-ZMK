@@ -98,7 +98,7 @@
             label = "EQUAL_LT";
         };
 
-        macro_my_parens: macro_parens {
+        macro_parens: macro_parens {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
@@ -171,7 +171,7 @@
 &kp GRAVE     &kp LG(Q)     &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)      &none                                               &none          &none      &trans            &kp LG(LS(I))  &kp LA(O)     &trans         &smiley
 &trans        &kp LA(A)     &kp LG(S)  &mkp MB3   &mkp MB1   &mkp MB2       &kp LS(LG(X))  &trans  &trans      &trans  &trans   &none          &none      &none             &none          &kp LG(L)     &none          &kp LA(SQT)
 &mo 8         &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(V))                         &trans      &trans                          &as MINUS  &kp EXCLAMATION   &kp EQUAL      &equal_lt     &trans         &trans
-&kp LS(LGUI)  &kp LS(LALT)  &trans     &mkp MB4   &mkp MB5                  &none          &none   &trans      &trans  &as SQT  &kp LG(SPACE)             &macro_my_parens  &macro_square  &macro_curly  &macro_pointy  &trans
+&kp LS(LGUI)  &kp LS(LALT)  &trans     &mkp MB4   &mkp MB5                  &none          &none   &trans      &trans  &as SQT  &kp LG(SPACE)             &macro_parens  &macro_square  &macro_curly  &macro_pointy  &trans
             >;
         };
 
