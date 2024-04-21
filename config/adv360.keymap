@@ -7,7 +7,7 @@
 
 / {
     behaviors {
-      #include "macros.dtsi"
+        #include "macros.dtsi"
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
@@ -146,8 +146,8 @@
         mac {
             label = "mac";
             bindings = <
-&as EQUAL       &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 3                                                                  &mo 5               &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB         &kp Q      &kp W       &kp E     &kp R      &kp T   &to 1                                                                   &kp LG(L)           &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BSLH
+&mt LGUI EQUAL  &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 3                                                                  &mo 5               &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &mt LGUI MINUS
+&mt LALT TAB    &kp Q      &kp W       &kp E     &kp R      &kp T   &to 1                                                                   &kp LG(L)           &kp Y   &kp U     &kp I      &kp O     &kp P     &mt LEFT_ALT NON_US_BACKSLASH
 &kp ESC         &kp A      &kp S       &kp D     &kp F      &kp G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 7      &kp LC(LA(DELETE))  &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z      &kp X       &kp C     &kp V      &kp B                               &kp HOME          &kp PAGE_UP                                   &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &kp LCTRL       &as GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &lt 2 BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kp ENTER  &kp SPACE                   &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mt LGUI ENTER
@@ -167,11 +167,11 @@
 
         fn_mac {
             bindings = <
-&kp F1        &kp F2        &kp F3     &kp F4     &kp F5     &kp F6         &tog 3                                              &mo 5          &kp F7     &kp F8            &kp F9         &kp F10       &kp F11        &kp F12
-&kp GRAVE     &kp LG(Q)     &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)      &none                                               &none          &none      &trans            &kp LG(LS(I))  &kp LA(O)     &trans         &smiley
-&trans        &kp LA(A)     &kp LG(S)  &mkp MB3   &mkp MB1   &mkp MB2       &kp LS(LG(X))  &trans  &trans      &trans  &trans   &none          &none      &none             &none          &kp LG(L)     &none          &kp LA(SQT)
-&mo 8         &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(V))                         &trans      &trans                          &as MINUS  &kp EXCLAMATION   &kp EQUAL      &equal_lt     &trans         &trans
-&kp LS(LGUI)  &kp LS(LALT)  &trans     &mkp MB4   &mkp MB5                  &none          &none   &trans      &trans  &as SQT  &kp LG(SPACE)             &macro_parens  &macro_square  &macro_curly  &macro_pointy  &trans
+&kp F1        &kp F2        &kp F3     &kp F4     &kp F5     &kp F6         &tog 3                                              &mo 5          &kp F7     &kp F8           &kp F9         &kp F10       &kp F11        &kp F12
+&kp GRAVE     &kp LG(Q)     &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)      &none                                               &none          &none      &trans           &kp LG(LS(I))  &kp LA(O)     &trans         &smiley
+&trans        &kp LA(A)     &kp LG(S)  &mkp MB3   &mkp MB1   &mkp MB2       &kp LS(LG(X))  &trans  &trans      &trans  &trans   &none          &none      &none            &none          &kp LG(L)     &none          &kp LA(SQT)
+&mo 8         &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(V))                         &trans      &trans                          &as MINUS  &kp EXCLAMATION  &kp EQUAL      &equal_lt     &trans         &trans
+&kp LS(LGUI)  &kp LS(LALT)  &trans     &mkp MB4   &mkp MB5                  &none          &none   &trans      &trans  &as SQT  &kp LG(SPACE)             &macro_parens    &macro_square  &macro_curly  &macro_pointy  &trans
             >;
         };
 
