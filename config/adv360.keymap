@@ -126,6 +126,13 @@
             label = "MACRO_POINTY";
         };
 
+        macro_quote_pair: macro_quote_pair {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
+            label = "MACRO_QUOTE_PAIR";
+        };
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -157,7 +164,7 @@
         windows {
             label = "Windows";
             bindings = <
-&mt LEFT_GUI EQUAL  &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 3                                                                       &mo 0               &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &mt LGUI MINUS
+&mt LEFT_GUI EQUAL  &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 3                                                                       &mo 5               &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &mt LGUI MINUS
 &mt LALT TAB        &kp Q      &kp W       &kp E     &kp R      &kp T   &to 0                                                                        &kp LG(L)           &kp Y   &kp U     &kp I      &kp O     &kp P     &mt LALT NON_US_BACKSLASH
 &kp ESC             &kp A      &kp S       &kp D     &kp F      &kp G   &kp F13          &kp LCTRL  &kp LEFT_ALT      &kp LGUI       &mo 7           &kp LC(LA(DELETE))  &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LEFT_SHIFT      &kp Z      &kp X       &kp C     &kp V      &kp B                               &kp HOME          &kp PAGE_UP                                        &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
@@ -177,11 +184,11 @@
 
         fn_windows {
             bindings = <
-&kp TILDE          &kp F1             &kp F2      &kp F3     &kp F4          &kp F5     &kp LC(LS(R))                                              &mo 5              &kp F6  &kp F7   &kp F8                &kp F9                 &kp F10        &kp F11
-&kp F13            &kp LA(F4)         &kp LC(F4)  &trans     &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                         &kp PRINTSCREEN    &none   &none    &kp LEFT_BRACE        &kp LG(O)              &kp LS(LC(P))  &kp F12
-&trans             &kp LG(A)          &kp LC(S)   &mkp MB3   &mkp MB1        &mkp MB2   &kp LG(LC(LA(N6)))  &trans  &trans      &trans  &trans     &none              &none   &none    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &equal_lt      &kp LG(SQT)
-&none              &kp LC(Z)          &kp LC(X)   &kp LC(C)  &kp LS(INSERT)  &kp LG(V)                              &trans      &trans                                &none   &none    &as LEFT_BRACKET      &as RIGHT_BRACKET      &trans         &trans
-&kp LA(LC(LG(Z)))  &kp LA(LG(LC(Y)))  &trans      &mkp MB4   &mkp MB5                   &none               &none   &trans      &trans  &kp GRAVE  &kp DOUBLE_QUOTES          &smiley  &trans                &trans                 &trans         &kp RCTRL
+&kp TILDE          &kp F1             &kp F2      &kp F3     &kp F4          &kp F5     &kp LC(LS(R))                                              &mo 5              &kp F6     &kp F7           &kp F8         &kp F9        &kp F10        &kp F11
+&kp F13            &kp LA(F4)         &kp LC(F4)  &trans     &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                         &kp PRINTSCREEN    &none      &none            &kp LC(LS(I))  &none         &kp LS(LC(P))  &kp F12
+&trans             &kp LG(A)          &kp LC(S)   &mkp MB3   &mkp MB1        &mkp MB2   &kp LG(LC(LA(N6)))  &trans  &trans      &trans  &trans     &none              &none      &none            &none          &none         &none          &kp LG(SQT)
+&none              &kp LC(Z)          &kp LC(X)   &kp LC(C)  &kp LS(INSERT)  &kp LG(V)                              &trans      &trans                                &as MINUS  &kp EXCLAMATION  &kp EQUAL      &equal_lt     &trans         &trans
+&kp LA(LC(LG(Z)))  &kp LA(LG(LC(Y)))  &trans      &mkp MB4   &mkp MB5                   &none               &none   &trans      &trans  &kp GRAVE  &kp DOUBLE_QUOTES             &macro_parens    &macro_square  &macro_curly  &macro_pointy  &macro_quote_pair
             >;
         };
 
