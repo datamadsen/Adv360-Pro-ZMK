@@ -162,40 +162,40 @@
         mac {
             label = "mac";
             bindings = <
-&kp EQUAL       &kp N1        &kp N2    &kp N3    &kp N4     &kp N5  &tog 3                                                                 &mo 5               &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB         &kp Q         &kp W     &kp E     &kp R      &kp T   &to 1                                                                  &kp LG(L)           &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BACKSLASH
-&kp ESC         &kp A         &kp S     &kp D     &kp F      &kp G   &kp F13          &kp LGUI  &kp LEFT_ALT      &kp LCTRL      &mo 7      &kp LC(LA(DELETE))  &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X     &kp C     &kp V      &kp B                              &kp HOME          &kp PAGE_UP                                   &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&kp LCTRL       &kp LEFT_ALT  &kp LGUI  &kp LEFT  &kp RIGHT          &lt 2 BACKSPACE  &kp DEL   &kp END           &kp PAGE_DOWN  &kp ENTER  &kp SPACE                   &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mt LGUI ENTER
+&kp EQUAL       &kp N1        &kp N2    &kp N3    &kp N4     &kp N5  &tog 3                                                                        &mo 5               &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB         &kp Q         &kp W     &kp E     &kp R      &kp T   &to 1                                                                         &kp LG(L)           &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BACKSLASH
+&kp ESC         &kp A         &kp S     &kp D     &kp F      &kp G   &kp LS(LA(LC(LG(N0))))  &kp LGUI  &kp LEFT_ALT      &kp LCTRL      &mo 7      &kp LC(LA(DELETE))  &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X     &kp C     &kp V      &kp B                                     &kp HOME          &kp PAGE_UP                                   &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&kp LCTRL       &kp LEFT_ALT  &kp LGUI  &kp LEFT  &kp RIGHT          &lt 2 BACKSPACE         &kp DEL   &kp END           &kp PAGE_DOWN  &kp ENTER  &kp SPACE                   &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mt LGUI ENTER
             >;
         };
 
         windows {
             label = "Windows";
             bindings = <
-&kp EQUAL       &kp N1    &kp N2    &kp N3    &kp N4     &kp N5  &tog 3                                                                      &mo 5               &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB         &kp Q     &kp W     &kp E     &kp R      &kp T   &to 0                                                                       &kp LG(L)           &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BACKSLASH
-&kp ESC         &kp A     &kp S     &kp D     &kp F      &kp G   &kp F13          &kp LGUI  &kp LEFT_ALT      &kp LCTRL      &mo 7           &kp LC(LA(DELETE))  &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z     &kp X     &kp C     &kp V      &kp B                              &kp HOME          &kp PAGE_UP                                        &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&kp LCTRL       &kp LALT  &kp LGUI  &kp LEFT  &kp RIGHT          &lt 3 BACKSPACE  &kp DEL   &kp END           &kp PAGE_DOWN  &mt LGUI ENTER  &kp SPACE                   &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mt LCTRL ENTER
+&kp EQUAL       &kp N1    &kp N2    &kp N3    &kp N4     &kp N5  &tog 3                                                                             &mo 5               &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB         &kp Q     &kp W     &kp E     &kp R      &kp T   &to 0                                                                              &kp LG(L)           &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BACKSLASH
+&kp ESC         &kp A     &kp S     &kp D     &kp F      &kp G   &kp LS(LA(LC(LG(N0))))  &kp LGUI  &kp LEFT_ALT      &kp LCTRL      &mo 7           &kp LC(LA(DELETE))  &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z     &kp X     &kp C     &kp V      &kp B                                     &kp HOME          &kp PAGE_UP                                        &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&kp LCTRL       &kp LALT  &kp LGUI  &kp LEFT  &kp RIGHT          &lt 3 BACKSPACE         &kp DEL   &kp END           &kp PAGE_DOWN  &mt LGUI ENTER  &kp SPACE                   &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mt LCTRL ENTER
             >;
         };
 
         fn_mac {
             bindings = <
-&kp F1        &kp F2        &kp F3     &kp F4     &kp F5     &kp F6         &tog 3                                              &mo 5          &kp F7     &kp F8           &kp F9         &kp F10       &kp F11        &kp F12
-&kp GRAVE     &kp LG(Q)     &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)      &none                                               &none          &none      &trans           &kp LG(LS(I))  &kp LA(O)     &trans         &smiley
-&trans        &kp LA(A)     &kp LG(S)  &mkp MB3   &mkp MB1   &mkp MB2       &kp LS(LG(X))  &trans  &trans      &trans  &trans   &none          &none      &none            &none          &kp LG(L)     &none          &kp LA(SQT)
-&mo 8         &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(V))                         &trans      &trans                          &as MINUS  &kp EXCLAMATION  &kp EQUAL      &equal_lt     &trans         &macro_backtick_pair
-&kp LS(LGUI)  &kp LS(LALT)  &trans     &mkp MB4   &mkp MB5                  &none          &none   &trans      &trans  &as SQT  &kp LG(SPACE)             &macro_parens    &macro_square  &macro_curly  &macro_pointy  &macro_quote_pair
+&kp F1        &kp F2        &kp F3     &kp F4     &kp F5     &kp F6         &tog 3                                              &mo 5          &kp F7     &kp F8         &kp F9                &kp F10    &kp F11  &kp F12
+&kp GRAVE     &kp LG(Q)     &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)      &none                                               &none          &equal_lt  &macro_pointy  &kp LG(LS(I))         &kp LA(O)  &trans   &smiley
+&trans        &kp LA(A)     &kp LG(S)  &mkp MB3   &mkp MB1   &mkp MB2       &kp LS(LG(X))  &trans  &trans      &trans  &trans   &none          &kp EQUAL  &macro_curly   &none                 &kp LG(L)  &none    &kp LA(SQT)
+&mo 8         &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(V))                         &trans      &trans                          &as MINUS  &macro_square  &macro_backtick_pair  &none      &trans   &none
+&kp LS(LGUI)  &kp LS(LALT)  &trans     &mkp MB4   &mkp MB5                  &none          &none   &trans      &trans  &as SQT  &kp LG(SPACE)             &macro_parens  &macro_quote_pair     &none      &none    &none
             >;
         };
 
         fn_windows {
             bindings = <
 &kp TILDE          &kp F1             &kp F2      &kp F3     &kp F4          &kp F5     &kp LC(LS(R))                                            &mo 5            &kp F6     &kp F7           &kp F8         &kp F9        &kp F10        &kp F11
-&kp F13            &kp LA(F4)         &kp LC(F4)  &trans     &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                       &kp PRINTSCREEN  &none      &none            &kp LC(LS(I))  &kp LG(O)     &kp LS(LC(P))  &kp F12
-&trans             &kp LG(A)          &kp LC(S)   &mkp MB3   &mkp MB1        &mkp MB2   &kp LG(LC(LA(N6)))  &trans  &trans      &trans  &trans   &none            &none      &none            &none          &none         &none          &kp LG(SQT)
+&kp F13            &kp LA(F4)         &kp LC(F4)  &trans     &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                       &kp PRINTSCREEN  &equal_lt  &none            &kp LC(LS(I))  &kp LG(O)     &kp LS(LC(P))  &kp F12
+&trans             &kp LG(A)          &kp LC(S)   &mkp MB3   &mkp MB1        &mkp MB2   &kp LG(LC(LA(N6)))  &trans  &trans      &trans  &trans   &none            &kp EQUAL  &none            &none          &none         &none          &kp LG(SQT)
 &none              &kp LC(Z)          &kp LC(X)   &kp LC(C)  &kp LS(INSERT)  &kp LG(V)                              &trans      &trans                            &as MINUS  &kp EXCLAMATION  &kp EQUAL      &equal_lt     &trans         &macro_backtick_pair
 &kp LA(LC(LG(Z)))  &kp LA(LG(LC(Y)))  &trans      &mkp MB4   &mkp MB5                   &none               &none   &trans      &trans  &as SQT  &kp LA(SPACE)               &macro_parens    &macro_square  &macro_curly  &macro_pointy  &macro_quote_pair
             >;
