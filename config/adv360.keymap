@@ -193,11 +193,11 @@
 
         fn_windows {
             bindings = <
-&kp TILDE          &kp F1             &kp F2      &kp F3     &kp F4          &kp F5     &kp LC(LS(R))                                            &mo 5            &kp F6     &kp F7           &kp F8         &kp F9        &kp F10        &kp F11
-&kp F13            &kp LA(F4)         &kp LC(F4)  &trans     &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                       &kp PRINTSCREEN  &equal_lt  &none            &kp LC(LS(I))  &kp LG(O)     &kp LS(LC(P))  &kp F12
-&trans             &kp LG(A)          &kp LC(S)   &mkp MB3   &mkp MB1        &mkp MB2   &kp LG(LC(LA(N6)))  &trans  &trans      &trans  &trans   &none            &kp EQUAL  &none            &none          &none         &none          &kp LG(SQT)
-&none              &kp LC(Z)          &kp LC(X)   &kp LC(C)  &kp LS(INSERT)  &kp LG(V)                              &trans      &trans                            &as MINUS  &kp EXCLAMATION  &kp EQUAL      &equal_lt     &trans         &macro_backtick_pair
-&kp LA(LC(LG(Z)))  &kp LA(LG(LC(Y)))  &trans      &mkp MB4   &mkp MB5                   &none               &none   &trans      &trans  &as SQT  &kp LA(SPACE)               &macro_parens    &macro_square  &macro_curly  &macro_pointy  &macro_quote_pair
+&kp TILDE          &kp F1             &kp F2      &kp F3     &kp F4          &kp F5     &kp LC(LS(R))                                            &mo 5            &kp F6     &kp F7         &kp F8                &kp F9     &kp F10        &kp F11
+&kp F13            &kp LA(F4)         &kp LC(F4)  &trans     &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                       &kp PRINTSCREEN  &equal_lt  &macro_pointy  &kp LC(LS(I))         &kp LG(O)  &kp LS(LC(P))  &kp F12
+&trans             &kp LG(A)          &kp LC(S)   &mkp MB3   &mkp MB1        &mkp MB2   &kp LG(LC(LA(N6)))  &trans  &trans      &trans  &trans   &none            &kp EQUAL  &macro_curly   &none                 &none      &none          &kp LG(SQT)
+&none              &kp LC(Z)          &kp LC(X)   &kp LC(C)  &kp LS(INSERT)  &kp LG(V)                              &trans      &trans                            &as MINUS  &macro_square  &macro_backtick_pair  &none      &trans         &none
+&kp LA(LC(LG(Z)))  &kp LA(LG(LC(Y)))  &trans      &mkp MB4   &mkp MB5                   &none               &none   &trans      &trans  &as SQT  &kp LA(SPACE)               &macro_parens  &macro_quote_pair     &none      &none          &none
             >;
         };
 
