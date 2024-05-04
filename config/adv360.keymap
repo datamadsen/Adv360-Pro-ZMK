@@ -179,11 +179,11 @@
         mac {
             label = "mac";
             bindings = <
-&kp EQUAL          &kp N1  &kp N2  &kp N3    &kp N4                           &kp N5  &tog 3                                                                                 &mo 5      &kp N6  &kp N7                             &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB            &kp Q   &kp W   &kp E     &kp R                            &kp T   &to 1                                                                                  &none      &kp Y   &kp U                              &kp I      &kp O    &kp P     &kp BACKSLASH
-&kp ESC            &kp A   &kp S   &kp D     &kp F                            &kp G   &holdtap_tap_preferred ENTER F13  &mo 7    &kp LEFT_ALT      &kp LCTRL      &mo 7      &none      &kp H   &kp J                              &kp K      &kp L    &kp SEMI  &kp SQT
-&shift_caps_words  &kp Z   &kp X   &kp C     &kp V                            &kp B                                              &kp HOME          &kp PAGE_UP                          &kp N   &kp M                              &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp LCTRL          &none   &mo 10  &kp LALT  &holdtap_tap_preferred LGUI TAB          &lt 2 BACKSPACE                   &kp DEL  &kp END           &kp PAGE_DOWN  &kp ENTER  &kp SPACE          &holdtap_tap_preferred LGUI GRAVE  &kp LALT   &mo 10   &none     &mt LGUI ENTER
+&kp EQUAL          &kp N1  &kp N2  &kp N3    &kp N4                           &kp N5  &tog 3                                                                                 &mo 5         &kp N6  &kp N7                             &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB            &kp Q   &kp W   &kp E     &kp R                            &kp T   &to 1                                                                                  &none         &kp Y   &kp U                              &kp I      &kp O    &kp P     &kp BACKSLASH
+&kp ESC            &kp A   &kp S   &kp D     &kp F                            &kp G   &holdtap_tap_preferred ENTER F13  &mo 7    &kp LEFT_ALT      &kp LCTRL      &mo 7      &none         &kp H   &kp J                              &kp K      &kp L    &kp SEMI  &kp SQT
+&shift_caps_words  &kp Z   &kp X   &kp C     &kp V                            &kp B                                              &kp HOME          &kp PAGE_UP                             &kp N   &kp M                              &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp LCTRL          &none   &mo 10  &kp LALT  &holdtap_tap_preferred LGUI TAB          &lt 2 BACKSPACE                   &kp DEL  &kp END           &kp PAGE_DOWN  &kp ENTER  &lt 10 SPACE          &holdtap_tap_preferred LGUI GRAVE  &kp LALT   &mo 10   &none     &mt LGUI ENTER
             >;
         };
 
