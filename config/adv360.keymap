@@ -200,11 +200,11 @@
 
         fn_mac {
             bindings = <
-&kp F1        &kp F2                              &kp F3     &kp F4     &kp F5     &kp F6         &tog 3                                              &mo 5          &kp F7                 &kp F8         &kp F9         &kp F10                             &kp F11        &kp F12
-&kp GRAVE     &kp LG(Q)                           &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)      &none                                               &none          &none                  &none          &kp LG(LS(I))  &holdtap_tap_preferred LA(O) LG(O)  &trans         &smiley
+&kp GRAVE     &kp F1                              &kp F2     &kp F3     &kp F4     &kp F5         &tog 3                                              &mo 5          &kp F6                 &kp F7         &kp F8         &kp F9                              &kp F10        &kp F11
+&none         &kp LG(Q)                           &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)      &none                                               &none          &none                  &none          &kp LG(LS(I))  &holdtap_tap_preferred LA(O) LG(O)  &trans         &smiley
 &trans        &holdtap_tap_preferred LA(A) LG(A)  &kp LG(S)  &mkp MB3   &mkp MB1   &mkp MB2       &kp LS(LG(X))  &trans  &trans      &trans  &trans   &none          &kp LEFT               &kp DOWN       &kp UP_ARROW   &kp RIGHT                           &none          &holdtap_tap_preferred LA(SQT) SQT
 &none         &kp LG(Z)                           &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(V))                         &trans      &trans                          &mt LG(LEFT) LA(LEFT)  &as MINUS      &equal_lt      &mt LG(RIGHT) LA(RIGHT)             &none          &kp GRAVE
-&kp LS(LGUI)  &kp LS(LALT)                        &mkp MB4   &mkp MB5   &kp LGUI                  &none          &none   &trans      &trans  &as SQT  &kp LG(SPACE)                         &macro_parens  &macro_square  &macro_curly                        &macro_pointy  &macro_quote_pair
+&kp LS(LGUI)  &kp LS(LALT)                        &none      &mkp MB4   &mkp MB5                  &none          &none   &trans      &trans  &as SQT  &kp LG(SPACE)                         &macro_parens  &macro_square  &macro_curly                        &macro_pointy  &macro_quote_pair
             >;
         };
 
