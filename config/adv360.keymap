@@ -61,7 +61,7 @@
         smiley: smiley {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp MINUS &kp RPAR &kp LC(Z)>;
+            bindings = <&kp COLON &kp MINUS &kp RPAR &kp LC(Z) &kp SPACE &kp LC(Z)>;
             label = "SMILEY";
         };
 
