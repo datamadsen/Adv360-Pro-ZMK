@@ -293,7 +293,7 @@
             bindings = <
 &trans          &trans     &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans     &trans  &trans
 &trans          &trans     &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &as LG(O)  &trans  &trans
-&trans          &as LG(A)  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &as LG(SQT)
+&trans          &kp LG(A)  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &as LG(SQT)
 &kp LEFT_SHIFT  &trans     &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans     &trans  &trans
 &trans          &trans     &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
             >;
