@@ -243,7 +243,7 @@
 &kp TAB            &kp Q            &kp W             &kp E              &kp R                             &kp T   &to 0                                                                        &kp LG(L)           &kp Y   &kp U                               &kp I               &kp O              &kp P                     &kp BACKSLASH
 &kp ESC            &hml LEFT_ALT A  &hml LEFT_META S  &hml LEFT_SHIFT D  &hml LCTRL F                      &kp G   &kp F13          &mo 7         &kp LEFT_ALT      &kp LEFT_GUI   &mo 7        &kp LC(LA(DELETE))  &kp H   &hmr RCTRL J                        &hmr RIGHT_SHIFT K  &hmr RIGHT_META L  &hmr RIGHT_ALT SEMICOLON  &kp SQT
 &shift_caps_words  &kp Z            &kp X             &kp C              &kp V                             &kp B                                  &kp HOME          &kp PAGE_UP                                     &kp N   &kp M                               &kp COMMA           &kp DOT            &kp FSLH                  &shift_caps_words
-&none              &none            &none             &mo 9              &holdtap_tap_preferred LCTRL TAB          &lt 3 BACKSPACE  &lt 6 DELETE  &kp END           &kp PAGE_DOWN  &lt 6 ENTER  &kp SPACE                   &holdtap_tap_preferred LCTRL GRAVE  &mo 9               &kp LEFT_BRACKET   &kp RIGHT_BRACKET         &mt RCTRL ENTER
+&none              &none            &none             &mo 9              &holdtap_tap_preferred LCTRL TAB          &lt 3 BACKSPACE  &lt 6 DELETE  &kp END           &kp PAGE_DOWN  &lt 6 ENTER  &kp SPACE                   &holdtap_tap_preferred LCTRL GRAVE  &mo 9               &kp LEFT_BRACKET   &kp RIGHT_BRACKET         &lt 1 ENTER
             >;
         };
 
