@@ -411,11 +411,11 @@
 
         app_switcher_windows {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                                 &none  &none     &none     &none         &none      &none  &none
-&none  &none  &none  &none  &none  &none  &none                                                 &none  &none     &none     &none         &none      &none  &none
-&none  &none  &none  &none  &none  &none  &kp F13               &none  &none      &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none  &none
-&none  &none  &none  &none  &none  &none                               &none      &none                &none     &none     &none         &none      &none  &none
-&none  &none  &none  &none  &none         &f13_confirm_windows  &none  &none      &none  &none  &none            &none     &none         &none      &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp F13               &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                &trans      &trans                  &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &f13_confirm_windows  &trans  &trans      &trans  &trans  &trans            &trans    &trans        &trans     &trans  &trans
             >;
         };
     };
