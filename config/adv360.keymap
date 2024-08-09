@@ -281,11 +281,11 @@
         windows {
             label = "Windows";
             bindings = <
-&kp GRAVE          &kp N1    &kp N2    &kp N3  &kp N4  &kp N5  &kp NUMBER_6                                                                          &lt 5 NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS         &kp EQUAL          &kp BACKSPACE
-&kp TAB            &kp Q     &kp W     &kp E   &kp R   &kp T   &to 0                                                                                 &kp LG(L)           &kp Y         &kp U         &kp I         &kp O             &kp P              &kp BACKSLASH
-&kp ESC            &kp A     &kp S     &kp D   &kp F   &kp G   &f13_app_sw_windows  &mo 7            &kp LEFT_ALT      &kp LEFT_GUI   &mo 7          &kp LC(LA(DELETE))  &kp H         &kp J         &kp K         &kp L             &kp SEMICOLON      &kp SQT
-&shift_caps_words  &kp Z     &kp X     &kp C   &kp V   &kp B                                         &kp HOME          &kp PAGE_UP                                       &kp N         &kp M         &kp COMMA     &kp DOT           &kp FSLH           &shift_caps_words
-&kp LCTRL          &kp LALT  &kp LGUI  &mo 9   &none           &mo 3                &lt 6 BACKSPACE  &kp END           &kp PAGE_DOWN  &kp BACKSPACE  &kp SPACE                         &none         &mo 9         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mt RCTRL ENTER
+&kp GRAVE          &kp N1    &kp N2    &kp N3  &kp N4  &kp N5  &kp NUMBER_6                                                                         &lt 5 NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS         &kp EQUAL          &kp BACKSPACE
+&kp TAB            &kp Q     &kp W     &kp E   &kp R   &kp T   &to 0                                                                                &kp LG(L)           &kp Y         &kp U         &kp I         &kp O             &kp P              &kp BACKSLASH
+&kp ESC            &kp A     &kp S     &kp D   &kp F   &kp G   &f13_app_sw_windows  &mo 7            &kp LEFT_ALT      &kp LEFT_GUI  &mo 7          &kp LC(LA(DELETE))  &kp H         &kp J         &kp K         &kp L             &kp SEMICOLON      &kp SQT
+&shift_caps_words  &kp Z     &kp X     &kp C   &kp V   &kp B                                         &kp HOME          &kp PAGE_UP                                      &kp N         &kp M         &kp COMMA     &kp DOT           &kp FSLH           &shift_caps_words
+&kp LCTRL          &kp LALT  &kp LGUI  &mo 9   &none           &mo 3                &lt 6 BACKSPACE  &kp END           &to 15        &kp BACKSPACE  &kp SPACE                         &none         &mo 9         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mt RCTRL ENTER
             >;
         };
 
@@ -416,6 +416,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &kp F13               &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                &trans      &trans                  &trans    &trans    &trans        &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &f13_confirm_windows  &trans  &trans      &trans  &trans  &trans            &trans    &trans        &trans     &trans  &trans
+            >;
+        };
+
+        game {
+            bindings = <
+&kp ESC    &kp N1    &kp N2    &kp N3  &kp N4  &kp N5  &kp N6                                           &trans  &trans  &trans  &trans     &trans   &trans    &trans
+&kp TAB    &kp Q     &kp W     &kp E   &kp R   &kp T   &trans                                           &trans  &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
+&trans     &kp A     &kp S     &kp D   &kp F   &kp G   &trans     &trans    &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
+&kp LSHFT  &kp Z     &kp X     &kp C   &kp V   &kp B                        &trans      &trans                  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
+&kp LCTRL  &kp LALT  &kp LGUI  &none   &none           &kp SPACE  &kp LGUI  &kp Y       &trans  &trans  &trans          &trans  &trans     &trans   &trans    &to 1
             >;
         };
     };
