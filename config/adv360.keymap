@@ -281,11 +281,11 @@
         windows {
             label = "Windows";
             bindings = <
-&kp GRAVE          &kp N1    &kp N2    &kp N3  &kp N4  &kp N5  &kp NUMBER_6                                                                         &lt 5 NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS         &kp EQUAL          &kp BACKSPACE
-&kp TAB            &kp Q     &kp W     &kp E   &kp R   &kp T   &to 0                                                                                &kp LG(L)           &kp Y         &kp U         &kp I         &kp O             &kp P              &kp BACKSLASH
-&kp ESC            &kp A     &kp S     &kp D   &kp F   &kp G   &f13_app_sw_windows  &mo 7            &kp LEFT_ALT      &kp LEFT_GUI  &mo 7          &kp LC(LA(DELETE))  &kp H         &kp J         &kp K         &kp L             &kp SEMICOLON      &kp SQT
-&shift_caps_words  &kp Z     &kp X     &kp C   &kp V   &kp B                                         &kp HOME          &kp PAGE_UP                                      &kp N         &kp M         &kp COMMA     &kp DOT           &kp FSLH           &shift_caps_words
-&kp LCTRL          &kp LALT  &kp LGUI  &mo 9   &none           &mo 3                &lt 6 BACKSPACE  &kp END           &to 15        &kp BACKSPACE  &kp SPACE                         &none         &mo 9         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mt RCTRL ENTER
+&kp GRAVE          &kp N1    &kp N2    &kp N3  &kp N4  &kp N5  &kp NUMBER_6                                                                         &lt 5 NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS                    &kp EQUAL                   &kp BACKSPACE
+&kp TAB            &kp Q     &kp W     &kp E   &kp R   &kp T   &to 0                                                                                &kp LG(L)           &kp Y         &kp U         &kp I         &kp O                        &kp P                       &kp BACKSLASH
+&kp ESC            &kp A     &kp S     &kp D   &kp F   &kp G   &f13_app_sw_windows  &mo 7            &kp LEFT_ALT      &kp LEFT_GUI  &mo 7          &kp LC(LA(DELETE))  &kp H         &kp J         &kp K         &kp L                        &kp SEMICOLON               &kp SQT
+&shift_caps_words  &kp Z     &kp X     &kp C   &kp V   &kp B                                         &kp HOME          &kp PAGE_UP                                      &kp N         &kp M         &kp COMMA     &kp DOT                      &kp FSLH                    &shift_caps_words
+&kp LCTRL          &kp LALT  &kp LGUI  &mo 9   &none           &mo 3                &lt 6 BACKSPACE  &kp END           &to 15        &kp BACKSPACE  &kp SPACE                         &none         &mo 9         &mt RIGHT_META LEFT_BRACKET  &mt LEFT_ALT RIGHT_BRACKET  &mt RCTRL ENTER
             >;
         };
 
@@ -371,11 +371,11 @@
 
         mac_danish {
             bindings = <
-&trans  &trans     &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans     &trans  &trans
-&trans  &trans     &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &as LA(O)  &trans  &trans
-&trans  &as LA(A)  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &as LA(SQT)
-&trans  &trans     &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans     &trans  &trans
-&trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
+&none  &none      &none  &none  &none  &none  &none                                  &none  &none  &none          &none            &none      &none  &none
+&none  &none      &none  &none  &none  &none  &none                                  &none  &none  &macro_curly   &kp EXCLAMATION  &as LA(O)  &none  &none
+&none  &as LA(A)  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &macro_parens  &kp MINUS        &equal_lt  &none  &as LA(SQT)
+&none  &none      &none  &none  &none  &none                &none      &none                &none  &macro_square  &none            &none      &none  &none
+&none  &none      &none  &none  &none         &none  &none  &none      &none  &none  &none         &macro_pointy  &none            &none      &none  &none
             >;
         };
 
