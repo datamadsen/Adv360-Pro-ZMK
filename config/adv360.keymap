@@ -291,11 +291,11 @@
 
         fn_mac {
             bindings = <
-&kp LS(LGUI)  &kp F1                                  &kp F2         &kp F3     &kp F4                                  &kp F5         &tog 3                                                     &mo 5                 &kp F6                 &kp F7         &kp F8         &kp F9                                  &kp F10        &kp DELETE
-&kp LS(LALT)  &kp LG(Q)                               &kp LG(W)      &none      &holdtap_tap_preferred LS(EQUAL) EQUAL  &none          &none                                                      &kp LG(LS(NUMBER_4))  &none                  &none          &kp LA(LG(I))  &holdtap_tap_preferred LA(LS(O)) LA(O)  &trans         &smiley
-&none         &holdtap_tap_preferred LA(LS(A)) LA(A)  &none          &none      &holdtap_tap_preferred LS(MINUS) MINUS  &equal_lt      &kp LS(LG(X))  &trans      &trans      &trans  &trans      &none                 &kp LEFT               &kp DOWN       &kp UP_ARROW   &kp RIGHT                               &none          &holdtap_tap_preferred LA(LS(SINGLE_QUOTE)) LA(SQT)
-&none         &kp LG(Z)                               &kp LG(X)      &kp LG(C)  &kp LG(V)                               &kp LG(LS(V))                             &trans      &trans                                    &mt LG(LEFT) LA(LEFT)  &none          &none          &mt LG(RIGHT) LA(RIGHT)                 &none          &none
-&kp LCTRL     &kp LEFT_ALT                            &kp LEFT_META  &mkp MB4   &mkp MB5                                               &none          &kp DELETE  &trans      &trans  &kp DELETE  &kp LG(SPACE)                                &macro_parens  &macro_square  &macro_curly                            &macro_pointy  &macro_quote_pair
+&kp LS(LGUI)  &kp F1        &kp F2         &kp F3     &kp F4                                  &kp F5         &tog 3                                                     &mo 5                 &kp F6                 &kp F7         &kp F8         &kp F9                   &kp F10        &kp DELETE
+&kp LS(LALT)  &kp LG(Q)     &kp LG(W)      &none      &holdtap_tap_preferred LS(EQUAL) EQUAL  &none          &none                                                      &kp LG(LS(NUMBER_4))  &none                  &none          &kp LA(LG(I))  &none                    &trans         &smiley
+&none         &kp LG(A)     &none          &none      &holdtap_tap_preferred LS(MINUS) MINUS  &equal_lt      &kp LS(LG(X))  &trans      &trans      &trans  &trans      &none                 &kp LEFT               &kp DOWN       &kp UP_ARROW   &kp RIGHT                &none          &none
+&none         &kp LG(Z)     &kp LG(X)      &kp LG(C)  &kp LG(V)                               &kp LG(LS(V))                             &trans      &trans                                    &mt LG(LEFT) LA(LEFT)  &none          &none          &mt LG(RIGHT) LA(RIGHT)  &none          &none
+&kp LCTRL     &kp LEFT_ALT  &kp LEFT_META  &mkp MB4   &mkp MB5                                               &none          &kp DELETE  &trans      &trans  &kp DELETE  &kp LG(SPACE)                                &macro_parens  &macro_square  &macro_curly             &macro_pointy  &macro_quote_pair
             >;
         };
 
