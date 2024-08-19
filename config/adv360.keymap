@@ -301,11 +301,11 @@
 
         fn_windows {
             bindings = <
-&kp LA(LC(LG(Z)))  &kp F1                                  &kp F2         &kp F3     &kp F4                                  &kp F5     &kp LC(LS(R))                                                   &mo 5          &kp F6             &kp F7         &kp F8         &kp F9                                  &kp F10        &kp DELETE
-&kp LA(LC(LG(Y)))  &kp LA(F4)                              &kp LC(F4)     &none      &holdtap_tap_preferred LS(EQUAL) EQUAL  &kp LC(T)  &kp LG(LC(LA(N5)))                                              &kp LS(LG(S))  &none              &none          &kp LC(LS(I))  &holdtap_tap_preferred LG(LS(O)) LG(O)  &kp LS(LC(P))  &smiley
-&none              &holdtap_tap_preferred LG(LS(A)) LG(A)  &none          &none      &holdtap_tap_preferred LS(MINUS) MINUS  &equal_lt  &kp LG(LC(LA(N6)))  &trans      &trans      &trans  &trans      &none          &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT                               &none          &holdtap_tap_preferred LG(LS(SQT)) LG(SQT)
-&none              &kp LC(Z)                               &kp LC(X)      &kp LC(C)  &kp LS(INSERT)                          &kp LG(V)                                  &trans      &trans                             &mt HOME LC(LEFT)  &none          &none          &mt END LC(RIGHT)                       &none          &macro_quote_pair
-&kp LCTRL          &kp LEFT_ALT                            &kp LEFT_META  &mkp MB4   &mkp MB5                                           &none               &kp DELETE  &trans      &to 15  &kp DELETE  &kp LA(SPACE)                     &macro_parens  &macro_square  &macro_curly                            &macro_pointy  &single_quote_pair
+&kp LA(LC(LG(Z)))  &kp F1        &kp F2         &kp F3     &kp F4                                  &kp F5     &kp LC(LS(R))                                                   &mo 5          &kp F6             &kp F7         &kp F8         &kp F9             &kp F10        &kp DELETE
+&kp LA(LC(LG(Y)))  &kp LA(F4)    &kp LC(F4)     &none      &holdtap_tap_preferred LS(EQUAL) EQUAL  &kp LC(T)  &kp LG(LC(LA(N5)))                                              &kp LS(LG(S))  &none              &none          &kp LC(LS(I))  &none              &kp LS(LC(P))  &smiley
+&none              &kp LC(A)     &none          &none      &holdtap_tap_preferred LS(MINUS) MINUS  &equal_lt  &kp LG(LC(LA(N6)))  &trans      &trans      &trans  &trans      &none          &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT          &none          &none
+&none              &kp LC(Z)     &kp LC(X)      &kp LC(C)  &kp LS(INSERT)                          &kp LG(V)                                  &trans      &trans                             &mt HOME LC(LEFT)  &none          &none          &mt END LC(RIGHT)  &none          &macro_quote_pair
+&kp LCTRL          &kp LEFT_ALT  &kp LEFT_META  &mkp MB4   &mkp MB5                                           &none               &kp DELETE  &trans      &to 15  &kp DELETE  &kp LA(SPACE)                     &macro_parens  &macro_square  &macro_curly       &macro_pointy  &single_quote_pair
             >;
         };
 
@@ -361,21 +361,21 @@
 
         windows_danish {
             bindings = <
-&none           &none      &none  &none  &none  &none  &none                                  &none  &none  &none          &none            &none      &none  &none
-&none           &none      &none  &none  &none  &none  &none                                  &none  &none  &macro_curly   &kp EXCLAMATION  &as LG(O)  &none  &none
-&none           &kp LG(A)  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &macro_parens  &kp MINUS        &equal_lt  &none  &as LG(SQT)
-&kp LEFT_SHIFT  &none      &none  &none  &none  &none                &none      &none                &none  &macro_square  &none            &none      &none  &none
-&none           &none      &none  &none  &none         &none  &none  &none      &none  &none  &none         &macro_pointy  &none            &none      &none  &none
+&none           &none                                   &none  &none  &none  &none  &none                                  &none  &none  &none          &none            &none                                   &none  &none
+&none           &none                                   &none  &none  &none  &none  &none                                  &none  &none  &macro_curly   &kp EXCLAMATION  &holdtap_tap_preferred LG(LS(O)) LG(O)  &none  &none
+&none           &holdtap_tap_preferred LG(LS(A)) LG(A)  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &macro_parens  &kp MINUS        &equal_lt                               &none  &holdtap_tap_preferred LG(LS(SQT)) LG(SQT)
+&kp LEFT_SHIFT  &none                                   &none  &none  &none  &none                &none      &none                &none  &macro_square  &none            &none                                   &none  &none
+&none           &none                                   &none  &none  &none         &none  &none  &none      &none  &none  &none         &macro_pointy  &none            &none                                   &none  &none
             >;
         };
 
         mac_danish {
             bindings = <
-&none  &none      &none  &none  &none  &none  &none                                  &none  &none  &none          &none            &none      &none  &none
-&none  &none      &none  &none  &none  &none  &none                                  &none  &none  &macro_curly   &kp EXCLAMATION  &as LA(O)  &none  &none
-&none  &as LA(A)  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &macro_parens  &kp MINUS        &equal_lt  &none  &as LA(SQT)
-&none  &none      &none  &none  &none  &none                &none      &none                &none  &macro_square  &none            &none      &none  &none
-&none  &none      &none  &none  &none         &none  &none  &none      &none  &none  &none         &macro_pointy  &none            &none      &none  &none
+&none  &none                                   &none  &none  &none  &none  &none                                  &none  &none  &none          &none            &none                                   &none  &none
+&none  &none                                   &none  &none  &none  &none  &none                                  &none  &none  &macro_curly   &kp EXCLAMATION  &holdtap_tap_preferred LA(LS(O)) LA(O)  &none  &none
+&none  &holdtap_tap_preferred LA(LS(A)) LA(A)  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &macro_parens  &kp MINUS        &equal_lt                               &none  &holdtap_tap_preferred LA(LS(SQT)) LA(SQT)
+&none  &none                                   &none  &none  &none  &none                &none      &none                &none  &macro_square  &none            &none                                   &none  &none
+&none  &none                                   &none  &none  &none         &none  &none  &none      &none  &none  &none         &macro_pointy  &none            &none                                   &none  &none
             >;
         };
 
