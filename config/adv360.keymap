@@ -361,11 +361,11 @@
 
         windows_danish {
             bindings = <
-&none           &none                                   &none  &none  &none  &none  &none                                  &none  &none  &none          &none            &none                                   &none  &none
-&none           &none                                   &none  &none  &none  &none  &none                                  &none  &none  &macro_curly   &kp EXCLAMATION  &holdtap_tap_preferred LG(LS(O)) LG(O)  &none  &none
-&none           &holdtap_tap_preferred LG(LS(A)) LG(A)  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &macro_parens  &kp MINUS        &equal_lt                               &none  &holdtap_tap_preferred LG(LS(SQT)) LG(SQT)
-&kp LEFT_SHIFT  &none                                   &none  &none  &none  &none                &none      &none                &none  &macro_square  &none            &none                                   &none  &none
-&none           &none                                   &none  &none  &none         &none  &none  &none      &none  &none  &none         &macro_pointy  &none            &none                                   &none  &none
+&none           &none                                   &none         &none          &none                                    &none                              &none                                  &none  &none         &none   &none                                &none                                   &none         &none
+&none           &none                                   &none         &none          &equal_lt                                &none                              &none                                  &none  &kp N7        &kp N8  &kp N9                               &holdtap_tap_preferred LG(LS(O)) LG(O)  &none         &none
+&none           &holdtap_tap_preferred LG(LS(A)) LG(A)  &none         &none          &holdtap_tap_preferred UNDERSCORE MINUS  &holdtap_tap_preferred PLUS EQUAL  &none  &none  &none      &none  &none  &none  &kp N4        &kp N5  &kp N6                               &equal_lt                               &none         &holdtap_tap_preferred LG(LS(SQT)) LG(SQT)
+&kp LEFT_SHIFT  &none                                   &none         &none          &none                                    &none                                            &none      &none                &kp NUMBER_1  &kp N2  &kp N3                               &none                                   &kp ASTERISK  &kp FSLH
+&none           &macro_parens                           &macro_curly  &macro_square  &macro_pointy                                                               &none  &none  &none      &none  &none  &none                &kp N0  &holdtap_tap_preferred PERIOD COMMA  &kp EQUAL                               &kp PLUS      &kp MINUS
             >;
         };
 
