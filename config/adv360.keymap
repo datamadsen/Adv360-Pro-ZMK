@@ -381,11 +381,11 @@
 
         app_switcher_mac {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp F13           &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                            &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &f13_confirm_mac  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0                                                 &to 0   &to 0     &to 0     &to 0         &to 0      &to 0  &to 0
+&to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0                                                 &to 0   &to 0     &to 0     &to 0         &to 0      &to 0  &to 0
+&to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &kp F13           &trans  &trans      &trans  &trans  &to 0   &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &to 0  &to 0
+&to 0  &to 0  &to 0  &to 0  &to 0  &to 0                            &trans      &trans                  &to 0     &to 0     &to 0         &to 0      &to 0  &to 0
+&to 0  &to 0  &to 0  &to 0  &to 0         &f13_confirm_mac  &trans  &trans      &trans  &trans  &trans            &to 0     &to 0         &to 0      &to 0  &f13_confirm_mac
             >;
         };
 
