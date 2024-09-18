@@ -313,21 +313,21 @@
 
         fn_mac {
             bindings = <
-&kp LS(LGUI)    &kp F1        &kp F2         &kp F3     &kp F4     &kp F5         &kp F6                                                             &kp F7                &kp F8                 &kp F9         &kp F10        &kp F11                  &kp F12        &kp DELETE
-&kp LS(LALT)    &kp LG(Q)     &kp LG(W)      &none      &kp LG(R)  &kp LG(T)      &kp LS(LC(LA(LG(V))))                                              &kp LG(LS(NUMBER_4))  &none                  &none          &kp LA(LG(I))  &none                    &trans         &smiley
-&none           &kp LG(A)     &none          &none      &none      &equal_lt      &kp LS(LG(LA(LC(B))))  &trans      &trans      &trans  &trans      &none                 &kp LEFT               &kp DOWN       &kp UP_ARROW   &kp RIGHT                &none          &none
-&kp LEFT_SHIFT  &kp LG(Z)     &kp LG(X)      &kp LG(C)  &kp LG(V)  &kp LG(LS(V))                                     &trans      &trans                                    &mt LG(LEFT) LA(LEFT)  &none          &none          &mt LG(RIGHT) LA(RIGHT)  &none          &none
-&kp LCTRL       &kp LEFT_ALT  &kp LEFT_META  &mkp MB4   &mkp MB5                  &none                  &kp DELETE  &trans      &trans  &kp DELETE  &kp LG(SPACE)                                &macro_parens  &macro_square  &macro_curly             &macro_pointy  &macro_quote_pair
+&kp LS(LGUI)    &kp F1        &kp F2         &kp F3      &kp F4     &kp F5         &kp F6                                                                 &kp F7                &kp F8                 &kp F9         &kp F10        &kp F11                  &kp F12        &kp DELETE
+&kp LS(LALT)    &kp LG(Q)     &kp LG(W)      &none       &kp LG(R)  &kp LG(T)      &kp LS(LC(LA(LG(V))))                                                  &kp LG(LS(NUMBER_4))  &none                  &none          &kp LA(LG(I))  &none                    &trans         &smiley
+&none           &kp LG(A)     &none          &kp DELETE  &none      &equal_lt      &kp LS(LG(LA(LC(B))))  &trans          &trans      &trans  &trans      &none                 &kp LEFT               &kp DOWN       &kp UP_ARROW   &kp RIGHT                &none          &none
+&kp LEFT_SHIFT  &kp LG(Z)     &kp LG(X)      &kp LG(C)   &kp LG(V)  &kp LG(LS(V))                                         &trans      &trans                                    &mt LG(LEFT) LA(LEFT)  &none          &none          &mt LG(RIGHT) LA(RIGHT)  &none          &none
+&kp LCTRL       &kp LEFT_ALT  &kp LEFT_META  &mkp MB4    &mkp MB5                  &none                  &kp LA(DELETE)  &trans      &trans  &kp DELETE  &kp LG(SPACE)                                &macro_parens  &macro_square  &macro_curly             &macro_pointy  &macro_quote_pair
             >;
         };
 
         fn_windows {
             bindings = <
-&kp LA(LC(LG(Z)))  &kp F1        &kp F2         &kp F3     &kp F4          &kp F5     &kp F6                                                                 &kp F7           &kp F8             &kp F9         &kp F10        &kp F11            &kp F12        &kp DELETE
-&kp LA(LC(LG(Y)))  &kp LA(F4)    &kp LC(F4)     &none      &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                                     &kp PRINTSCREEN  &none              &none          &kp LC(LS(I))  &none              &kp LS(LC(P))  &smiley
-&none              &kp LC(A)     &none          &none      &none           &none      &kp LG(LC(LA(N6)))  &trans      &trans             &trans  &trans      &none            &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT          &none          &none
-&kp LEFT_SHIFT     &kp LC(Z)     &kp LC(X)      &kp LC(C)  &kp LS(INSERT)  &kp LG(V)                                  &trans             &trans                               &mt HOME LC(LEFT)  &kp LC(LS(M))  &none          &mt END LC(RIGHT)  &none          &macro_quote_pair
-&kp LCTRL          &kp LEFT_ALT  &kp LEFT_META  &mkp MB4   &mkp MB5                   &none               &kp DELETE  &kp LC(LS(M))      &to 15  &kp DELETE  &kp LA(SPACE)                       &macro_parens  &macro_square  &macro_curly       &macro_pointy  &single_quote_pair
+&kp LA(LC(LG(Z)))  &kp F1        &kp F2         &kp F3      &kp F4          &kp F5     &kp F6                                                             &kp F7           &kp F8             &kp F9         &kp F10        &kp F11            &kp F12        &kp DELETE
+&kp LA(LC(LG(Y)))  &kp LA(F4)    &kp LC(F4)     &none       &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                                 &kp PRINTSCREEN  &none              &none          &kp LC(LS(I))  &none              &kp LS(LC(P))  &smiley
+&none              &kp LC(A)     &none          &kp DELETE  &none           &none      &kp LG(LC(LA(N6)))  &trans  &trans             &trans  &trans      &none            &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT          &none          &none
+&kp LEFT_SHIFT     &kp LC(Z)     &kp LC(X)      &kp LC(C)   &kp LS(INSERT)  &kp LG(V)                              &trans             &trans                               &mt HOME LC(LEFT)  &kp LC(LS(M))  &none          &mt END LC(RIGHT)  &none          &macro_quote_pair
+&kp LCTRL          &kp LEFT_ALT  &kp LEFT_META  &mkp MB4    &mkp MB5                   &none               &none   &kp LC(LS(M))      &to 15  &kp DELETE  &kp LA(SPACE)                       &macro_parens  &macro_square  &macro_curly       &macro_pointy  &single_quote_pair
             >;
         };
 
