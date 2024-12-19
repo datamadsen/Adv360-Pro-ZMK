@@ -1,9 +1,10 @@
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 &mt { tapping-term-ms = <225>; };
@@ -292,22 +293,22 @@
         mac {
             label = "mac";
             bindings = <
-&kp GRAVE          &kp N1        &kp N2           &kp N3             &kp N4         &kp N5  &kp NUMBER_6                                                                               &lt 5 NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0   &kp MINUS              &kp EQUAL                    &kp BACKSPACE
-&kp TAB            &kp Q         &kp W            &kp E              &kp R          &kp T   &to 1                                                                                      &none           &kp Y         &kp U           &kp I          &kp O                  &kp P                        &kp BACKSLASH
-&kp ESC            &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCMD F    &kp G   &f13_switcher_mac  &mo 7          &kp LC(LG(LA(D)))      &kp LCTRL          &mo 7          &none           &kp H         &hmr RMETA J    &hmr RSHIFT K  &hmr RIGHT_ALT L       &hmr RCTRL SEMICOLON         &kp SQT
-&shift_caps_words  &kp Z         &kp X            &kp C              &kp V          &kp B                                     &kp LC(LG(LA(S)))      &kp LA(LC(LG(V)))                                 &kp N         &kp M           &kp COMMA      &kp DOT                &kp FSLH                     &kp RSHFT
-&kp LCTRL          &mo 10        &kp LCTRL        &kp LALT           &kp LEFT_META          &mo 2              &kp BACKSPACE  &kp LS(LC(LG(A)))      &kp LA(LC(LG(B)))  &kp BACKSPACE  &lt 2 SPACE                   &kp RIGHT_META  &kp LEFT_ALT   &mt RGUI LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET  &mt RCTRL ENTER
+&kp GRAVE  &kp N1        &kp N2           &kp N3             &kp N4       &kp N5  &kp NUMBER_6                                                                               &lt 5 NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &kp MINUS         &kp EQUAL             &kp BACKSPACE
+&kp TAB    &kp Q         &kp W            &kp E              &kp R        &kp T   &to 1                                                                                      &none           &kp Y         &kp U         &kp I          &kp O             &kp P                 &kp BACKSLASH
+&kp ESC    &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCMD F  &kp G   &f13_switcher_mac  &mo 7          &kp LC(LG(LA(D)))      &kp LCTRL          &mo 7          &none           &kp H         &hmr RMETA J  &hmr RSHIFT K  &hmr RIGHT_ALT L  &hmr RCTRL SEMICOLON  &kp SQT
+&none      &kp Z         &kp X            &kp C              &kp V        &kp B                                     &kp LC(LG(LA(S)))      &kp LA(LC(LG(V)))                                 &kp N         &kp M         &kp COMMA      &kp DOT           &kp FSLH              &none
+&kp LCTRL  &mo 10        &none            &none              &none                &mo 2              &kp BACKSPACE  &kp LS(LC(LG(A)))      &kp LA(LC(LG(B)))  &kp BACKSPACE  &lt 2 SPACE                   &none         &none          &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &mt RCTRL ENTER
             >;
         };
 
         windows {
             label = "Windows";
             bindings = <
-&kp GRAVE          &kp N1           &kp N2           &kp N3             &kp N4        &kp N5  &kp NUMBER_6                                                                                                 &lt 5 NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &kp MINUS         &kp EQUAL            &kp BACKSPACE
-&kp TAB            &kp Q            &kp W            &kp E              &kp R         &kp T   &to 0                                                                                                        &kp LG(L)           &kp Y         &kp U         &kp I               &kp O             &kp P                &kp BACKSLASH
-&kp ESC            &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G   &f13_app_sw_windows  &mo 7            &kp LS(LA(LC(LG(NUMBER_6))))      &kp LEFT_GUI          &mo 7          &kp LC(LA(DELETE))  &kp H         &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RGUI SEMICOLON  &kp SQT
-&shift_caps_words  &kp Z            &kp X            &kp C              &kp V         &kp B                                         &kp LS(LC(LA(LG(NUMBER_5))))      &kp LA(LG(NUMBER_4))                                     &kp N         &kp M         &kp COMMA           &kp DOT           &kp FSLH             &shift_caps_words
-&kp LCTRL          &mo 9            &kp LGUI         &kp LEFT_ALT       &kp LCTRL             &mo 3                &lt 6 BACKSPACE  &kp LS(LC(LA(LG(NUMBER_4))))      &kp LA(LG(NUMBER_6))  &kp BACKSPACE  &kp SPACE                         &kp RCTRL     &kp RIGHT_ALT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp ENTER
+&kp GRAVE  &kp N1           &kp N2           &kp N3             &kp N4        &kp N5  &kp NUMBER_6                                                                                                 &lt 5 NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &kp MINUS         &kp EQUAL            &kp BACKSPACE
+&kp TAB    &kp Q            &kp W            &kp E              &kp R         &kp T   &to 0                                                                                                        &kp LG(L)           &kp Y         &kp U         &kp I               &kp O             &kp P                &kp BACKSLASH
+&kp ESC    &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G   &f13_app_sw_windows  &mo 7            &kp LS(LA(LC(LG(NUMBER_6))))      &kp LEFT_GUI          &mo 7          &kp LC(LA(DELETE))  &kp H         &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RGUI SEMICOLON  &kp SQT
+&none      &kp Z            &kp X            &kp C              &kp V         &kp B                                         &kp LS(LC(LA(LG(NUMBER_5))))      &kp LA(LG(NUMBER_4))                                     &kp N         &kp M         &kp COMMA           &kp DOT           &kp FSLH             &none
+&kp LCTRL  &mo 9            &none            &none              &none                 &mo 3                &lt 6 BACKSPACE  &kp LS(LC(LA(LG(NUMBER_4))))      &kp LA(LG(NUMBER_6))  &kp BACKSPACE  &kp SPACE                         &none         &none               &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp ENTER
             >;
         };
 
