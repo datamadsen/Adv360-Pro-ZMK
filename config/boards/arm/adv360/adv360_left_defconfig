@@ -10,6 +10,9 @@ CONFIG_BOARD_ADV360_LEFT=y
 # Enable MPU
 CONFIG_ARM_MPU=y
 
+# enable Pointing?
+CONFIG_ZMK_POINTING=y
+
 # enable GPIO
 CONFIG_GPIO=y
 
