@@ -147,7 +147,7 @@
         f13_switcher_mac: f13_switcher_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F13 &to 11>;
+            bindings = <&kp F13 &to 10>;
             label = "F13_SWITCHER_MAC";
         };
 
@@ -168,7 +168,7 @@
         f13_app_sw_windows: f13_app_sw_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F13 &to 14>;
+            bindings = <&kp F13 &to 13>;
             label = "F13_APP_SW_WINDOWS";
         };
 
@@ -328,7 +328,7 @@
 &kp LA(LC(LG(Y)))  &kp LA(F4)    &kp LC(F4)     &none       &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                                                  &kp PRINTSCREEN  &none              &none          &kp LC(LS(I))  &none              &kp LS(LC(P))  &smiley
 &none              &kp LC(A)     &none          &kp DELETE  &mkp LCLK       &mkp RCLK  &kp LG(LC(LA(N6)))  &trans  &trans             &kp LG(LC(LEFT))  &kp LC(LG(RIGHT))  &none            &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT          &none          &none
 &kp LEFT_SHIFT     &kp LC(Z)     &kp LC(X)      &kp LC(C)   &kp LS(INSERT)  &kp LG(V)                              &trans             &trans                                                &mt HOME LC(LEFT)  &kp LC(LS(M))  &none          &mt END LC(RIGHT)  &none          &macro_quote_pair
-&kp LCTRL          &kp LEFT_ALT  &kp LEFT_META  &mkp MB4    &mkp MB5                   &none               &none   &kp LC(LS(M))      &to 15            &kp DELETE         &kp LA(SPACE)                       &macro_parens  &macro_square  &macro_curly       &macro_pointy  &single_quote_pair
+&kp LCTRL          &kp LEFT_ALT  &kp LEFT_META  &mkp MB4    &mkp MB5                   &none               &none   &kp LC(LS(M))      &to 14            &kp DELETE         &kp LA(SPACE)                       &macro_parens  &macro_square  &macro_curly       &macro_pointy  &single_quote_pair
             >;
         };
 
@@ -359,16 +359,6 @@
 &kp LSHFT      &trans               &vs_git_commit     &kp LS(LC(F12))  &kp LC(LS(F))  &kp LC(T)      &trans     &kp F11  &trans            &trans  &trans         &trans             &vs_git_history  &kp LA(END)      &kp LA(HOME)  &kp LS(LA(L))  &trans   &trans
 &trans         &kp LC(PAUSE_BREAK)  &kp F9             &vs_clean_build  &kp F11        &kp LS(LC(B))                      &kp LA(HOME)      &trans                                    &kp LS(F2)       &kp LA(BSLH)     &trans        &trans         &trans   &trans
 &kp LA(SLASH)  &trans               &trans             &trans           &kp F10                       &none      &kp F9   &kp LA(END)       &trans  &kp LA(ENTER)  &kp LS(LC(SPACE))                   &trans           &trans        &trans         &trans   &kp LA(ENTER)
-            >;
-        };
-
-        meh {
-            bindings = <
-&trans  &trans             &trans             &trans             &trans             &trans             &trans                                      &trans  &trans             &trans             &trans             &trans             &trans             &trans
-&trans  &kp LS(LA(LC(Q)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))  &trans                                      &trans  &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))  &kp LS(LA(LC(O)))  &kp LC(LA(LS(P)))  &trans
-&trans  &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))  &kp LS(LA(LC(G)))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LA(LS(LC(H)))  &kp LS(LA(LC(J)))  &kp LC(LA(LS(K)))  &kp LC(LA(LS(L)))  &trans             &trans
-&trans  &kp LS(LA(LC(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LS(LA(LC(V)))  &kp LC(LA(LS(B)))                  &trans      &trans                  &kp LS(LA(LC(N)))  &kp LC(LA(LS(M)))  &trans             &trans             &trans             &trans
-&trans  &trans             &trans             &trans             &trans                                &trans  &trans  &trans      &trans  &trans  &trans                     &trans             &trans             &trans             &trans             &trans
             >;
         };
 
