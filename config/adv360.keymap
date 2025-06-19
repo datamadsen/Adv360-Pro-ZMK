@@ -199,11 +199,27 @@
             label = "WINDOWS_AA";
         };
 
-        linux_move: new_macro {
+        linux_move: linux_move {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LGUI &mkp MB1>;
-            label = "NEW_MACRO";
+            label = "LINUX_MOVE";
+        };
+
+        linux_move2: linux_move2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LGUI &mkp LCLK>;
+
+            label = "LINUX_MOVE2";
+        };
+
+        linux_move3: linux_move3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LGUI &mkp LCLK>;
+
+            label = "LINUX_MOVE3";
         };
 
         shift_caps_words: shift_caps_words {
@@ -352,8 +368,8 @@
 
         fn_linux {
             bindings = <
-&kp LA(F7)      &kp F1          &kp F2           &kp F3      &kp F4          &kp F5     &kp F6                                                                              &kp F7           &kp F8             &kp F9         &kp F10        &kp F11            &kp F12        &kp DELETE
-&kp LA(F8)      &kp LA(F4)      &kp LC(F4)       &none       &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                                                  &kp PRINTSCREEN  &none              &none          &kp LC(LS(I))  &none              &kp LS(LC(P))  &smiley
+&linux_move     &kp F1          &kp F2           &kp F3      &kp F4          &kp F5     &kp F6                                                                              &kp F7           &kp F8             &kp F9         &kp F10        &kp F11            &kp F12        &kp DELETE
+&linux_move2    &kp LA(F4)      &kp LC(F4)       &none       &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                                                  &kp PRINTSCREEN  &none              &none          &kp LC(LS(I))  &none              &kp LS(LC(P))  &smiley
 &none           &kp LC(A)       &none            &kp DELETE  &none           &none      &kp LG(LC(LA(N6)))  &trans  &trans             &kp LG(LC(LEFT))  &kp LC(LG(RIGHT))  &none            &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT          &none          &none
 &kp LEFT_SHIFT  &kp LC(Z)       &kp LC(X)        &kp LC(C)   &kp LS(INSERT)  &kp LG(V)                              &trans             &trans                                                &mt HOME LC(LEFT)  &kp LC(LS(M))  &none          &mt END LC(RIGHT)  &none          &macro_quote_pair
 &kp LCTRL       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp PG_UP   &kp PAGE_DOWN              &none               &none   &kp LC(LS(M))      &to 0             &kp DELETE         &kp LA(SPACE)                       &macro_parens  &macro_square  &macro_curly       &macro_pointy  &single_quote_pair
