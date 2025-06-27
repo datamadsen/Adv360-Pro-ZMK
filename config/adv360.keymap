@@ -337,6 +337,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
+            flavor = "tap-preferred";
         };
 
         linux_o_oe: linux_o_oe {
@@ -346,6 +347,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
+            flavor = "tap-preferred";
         };
 
         linux_semi_ae: linux_semi_ae {
@@ -355,6 +357,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
+            flavor = "tap-preferred";
         };
     };
 
