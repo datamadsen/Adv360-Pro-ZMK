@@ -396,7 +396,7 @@
 &kp TAB         &kp Q            &kp W     &kp E   &kp R      &kp T   &to 0                                                                                                   &kp LG(L)           &kp Y         &kp U         &kp I         &linux_o_oe 0 O  &kp P                       &kp BACKSLASH
 &kp ESC         &linux_a_aa 0 A  &kp S     &kp D   &lt 13 F   &kp G   &kp LG(W)     &kp LS(LA(LCTRL))  &kp LS(LA(LC(LGUI)))      &kp LS(LC(LA(LEFT_GUI)))  &kp LS(LA(LCTRL))  &kp LC(LA(DELETE))  &kp H         &kp J         &kp K         &kp L            &linux_semi_ae 0 SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z            &kp X     &kp C   &kp V      &kp B                                    &none                     &none                                                            &kp N         &kp M         &kp COMMA     &kp DOT          &kp FSLH                    &kp RIGHT_SHIFT
-&kp LCTRL       &kp LALT         &kp LCMD  &mo 9   &kp LCTRL          &mo 5         &none              &kp LCMD                  &mo 14                    &kp BACKSPACE      &kp SPACE                         &none         &none         &kp RGUI         &kp RALT                    &mt RCTRL ENTER
+&kp LCTRL       &kp LALT         &kp LCMD  &mo 9   &kp LCTRL          &mo 5         &kp RA(O)          &kp LCMD                  &mo 14                    &kp BACKSPACE      &kp SPACE                         &none         &none         &kp RGUI         &kp RALT                    &mt RCTRL ENTER
             >;
         };
 
