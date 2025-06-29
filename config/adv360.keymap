@@ -411,7 +411,7 @@
 &none           &kp LA(F4)      &kp LC(F4)       &kp LG(T)       &kp LC(R)       &kp LC(T)      &kp LG(LC(LA(N5)))                                                                  &kp PRINTSCREEN  &none              &none          &kp LC(LS(I))  &linux_hide_others  &kp LS(LC(P))  &smiley
 &none           &kp LC(A)       &none            &kp DELETE      &none           &kp LGUI       &kp LG(LC(LA(N6)))  &trans  &trans             &kp LG(LC(LEFT))  &kp LC(LG(RIGHT))  &none            &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT           &none          &none
 &kp LEFT_SHIFT  &kp LC(Z)       &kp LC(X)        &kp LC(INSERT)  &kp LS(INSERT)  &kp LC(F9)                                 &trans             &trans                                                &mt HOME LC(LEFT)  &kp LC(LS(M))  &none          &mt END LC(RIGHT)   &none          &macro_quote_pair
-&kp LCTRL       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp PG_UP       &kp PAGE_DOWN                  &none               &none   &kp LC(LS(M))      &to 0             &kp DELETE         &kp LG(W)                           &kp LG(H)      &none          &none               &none          &none
+&kp LCTRL       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp PG_UP       &kp PAGE_DOWN                  &none               &none   &kp LC(LS(M))      &to 0             &kp DELETE         &kp LG(W)                           &kp LG(H)      &none          &none               &none          &to 15
             >;
         };
 
@@ -502,6 +502,16 @@
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans          &trans           &trans     &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans          &trans           &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        gaming {
+            bindings = <
+&kp ESC    &kp N1    &kp N2    &kp N3  &kp N4  &kp N5  &kp N6                                         &kp N7  &kp N8  &kp N9  &kp N0     &kp MINUS  &kp EQUAL  &trans
+&kp TAB    &kp Q     &kp W     &kp E   &kp R   &kp T   &kp Y                                          &trans  &kp Y   &kp U   &kp I      &kp O      &kp P      &kp BSLH
+&none      &kp A     &kp S     &kp D   &kp F   &kp G   &trans     &trans  &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K      &kp L      &kp SEMI   &trans
+&kp LSHFT  &kp Z     &kp X     &kp C   &kp V   &kp B                      &trans      &trans                  &kp N   &kp M   &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
+&kp LCTRL  &kp LALT  &kp LGUI  &trans  &trans          &kp SPACE  &trans  &trans      &trans  &trans  &to 2           &trans  &trans     &kp RGUI   &kp RALT   &kp RCTRL
             >;
         };
     };
