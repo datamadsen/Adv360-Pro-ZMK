@@ -407,11 +407,11 @@
 
         fn_linux {
             bindings = <
-&none           &kp F1          &kp F2           &kp F3          &kp F4          &kp F5      &kp F6                                                                              &kp F7           &kp F8             &kp F9         &kp F10        &kp F11             &kp F12        &kp DELETE
-&none           &kp LA(F4)      &kp LC(F4)       &kp LG(T)       &kp LC(R)       &kp LC(T)   &kp LG(LC(LA(N5)))                                                                  &kp PRINTSCREEN  &none              &none          &kp LC(LS(I))  &linux_hide_others  &kp LS(LC(P))  &smiley
-&none           &kp LC(A)       &none            &kp DELETE      &none           &kp LGUI    &kp LG(LC(LA(N6)))  &trans  &trans             &kp LG(LC(LEFT))  &kp LC(LG(RIGHT))  &none            &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT           &none          &none
-&kp LEFT_SHIFT  &kp LC(Z)       &kp LC(X)        &kp LC(INSERT)  &kp LS(INSERT)  &kp LC(F9)                              &trans             &trans                                                &mt HOME LC(LEFT)  &kp LC(LS(M))  &none          &mt END LC(RIGHT)   &none          &macro_quote_pair
-&kp LCTRL       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp PG_UP       &kp PAGE_DOWN               &none               &none   &kp LC(LS(M))      &to 0             &kp DELETE         &kp LG(W)                           &kp LG(H)      &none          &none               &none          &none
+&none           &mt F1 LG(N1)   &mt F2 LG(N2)    &mt F3 LG(N3)   &mt F4 LG(N4)   &mt F5 LG(N5)  &mt F6 LG(N6)                                                                       &mt F7 LG(N7)    &mt F8 LG(N8)      &mt F9 LG(N9)  &kp F10        &kp F11             &kp F12        &kp DELETE
+&none           &kp LA(F4)      &kp LC(F4)       &kp LG(T)       &kp LC(R)       &kp LC(T)      &kp LG(LC(LA(N5)))                                                                  &kp PRINTSCREEN  &none              &none          &kp LC(LS(I))  &linux_hide_others  &kp LS(LC(P))  &smiley
+&none           &kp LC(A)       &none            &kp DELETE      &none           &kp LGUI       &kp LG(LC(LA(N6)))  &trans  &trans             &kp LG(LC(LEFT))  &kp LC(LG(RIGHT))  &none            &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT           &none          &none
+&kp LEFT_SHIFT  &kp LC(Z)       &kp LC(X)        &kp LC(INSERT)  &kp LS(INSERT)  &kp LC(F9)                                 &trans             &trans                                                &mt HOME LC(LEFT)  &kp LC(LS(M))  &none          &mt END LC(RIGHT)   &none          &macro_quote_pair
+&kp LCTRL       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp PG_UP       &kp PAGE_DOWN                  &none               &none   &kp LC(LS(M))      &to 0             &kp DELETE         &kp LG(W)                           &kp LG(H)      &none          &none               &none          &none
             >;
         };
 
