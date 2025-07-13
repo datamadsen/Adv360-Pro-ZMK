@@ -411,7 +411,7 @@
 &none           &kp LG(W)       &kp LC(F4)       &kp LG(T)       &kp LC(R)       &kp LC(T)      &kp LG(LC(LA(N5)))                                                                  &kp PRINTSCREEN  &none              &none          &kp LC(LS(I))  &linux_hide_others  &kp LS(LC(P))  &smiley
 &none           &kp LC(A)       &none            &kp DELETE      &none           &kp LGUI       &kp LG(LC(LA(N6)))  &trans  &trans             &kp LG(LC(LEFT))  &kp LC(LG(RIGHT))  &none            &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT           &none          &none
 &kp LEFT_SHIFT  &kp LC(Z)       &kp LC(X)        &kp LC(INSERT)  &kp LS(INSERT)  &kp LC(F9)                                 &trans             &trans                                                &mt HOME LC(LEFT)  &kp LC(LS(M))  &none          &mt END LC(RIGHT)   &none          &macro_quote_pair
-&kp LCTRL       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp PG_UP       &kp PAGE_DOWN                  &none               &none   &kp LC(LS(M))      &to 0             &kp DELETE         &none                               &kp LG(H)      &none          &none               &none          &to 15
+&kp LCTRL       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp PG_UP       &kp PAGE_DOWN                  &none               &none   &kp LC(LS(M))      &to 0             &kp DELETE         &kp LGUI                            &kp LG(H)      &none          &none               &none          &to 15
             >;
         };
 
