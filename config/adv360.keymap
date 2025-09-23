@@ -401,7 +401,7 @@
 &kp LA(LC(LG(Y)))  &kp LA(F4)  &kp LC(F4)  &none       &kp LC(R)       &kp LC(T)  &kp LG(LC(LA(N5)))                                                                  &kp PRINTSCREEN  &none              &none          &kp LC(LS(I))  &none              &kp LS(LC(P))  &smiley
 &none              &kp LC(A)   &none       &kp DELETE  &none           &none      &kp LG(LC(LA(N6)))  &trans  &trans             &kp LG(LC(LEFT))  &kp LC(LG(RIGHT))  &none            &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT          &none          &none
 &kp LEFT_SHIFT     &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LS(INSERT)  &kp LG(V)                              &trans             &trans                                                &mt HOME LC(LEFT)  &kp PAGE_DOWN  &kp PG_UP      &mt END LC(RIGHT)  &none          &macro_quote_pair
-&kp LCTRL          &none       &mkp RCLK   &mkp MCLK   &mkp LCLK                  &none               &none   &kp LC(LS(M))      &to 0             &kp DELETE         &kp LA(SPACE)                       &macro_parens  &macro_square  &macro_curly       &macro_pointy  &single_quote_pair
+&mkp MB4           &mkp MB5    &mkp RCLK   &mkp MCLK   &mkp LCLK                  &none               &none   &kp LC(LS(M))      &to 0             &kp DELETE         &kp LA(SPACE)                       &macro_parens  &macro_square  &macro_curly       &macro_pointy  &single_quote_pair
             >;
         };
 
