@@ -407,7 +407,7 @@
 
         fn_linux {
             bindings = <
-&linux_move_window    &mt F1 LG(N1)  &mt F2 LG(N2)  &mt F3 LG(N3)   &mt F4 LG(N4)   &mt F5 LG(N5)  &mt F6 LG(N6)                                                                       &mt F7 LG(N7)                          &mt F8 LG(N8)      &mt F9 LG(N9)  &kp F10        &kp F11             &kp F12        &kp DELETE
+&linux_move_window    &mt F1 LA(N1)  &mt F2 LA(N2)  &mt F3 LA(N3)   &mt F4 LA(N4)   &mt F5 LA(N5)  &mt F6 LA(N6)                                                                       &mt F7 LA(N7)                          &mt F8 LA(N8)      &mt F9 LA(N9)  &kp F10        &kp F11             &kp F12        &kp DELETE
 &linux_resize_window  &kp LG(W)      &kp LC(F4)     &kp LG(T)       &kp LC(R)       &kp LC(T)      &kp LG(LC(LA(N5)))                                                                  &kp PRINTSCREEN                        &none              &none          &kp LC(LS(I))  &linux_hide_others  &kp LS(LC(P))  &smiley
 &none                 &kp LC(A)      &none          &kp DELETE      &none           &kp LG(SPACE)  &kp LG(LC(LA(N6)))  &trans  &trans             &kp LG(LC(LEFT))  &kp LC(LG(RIGHT))  &none                                  &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT           &none          &none
 &kp LEFT_SHIFT        &kp LC(Z)      &kp LC(X)      &kp LC(INSERT)  &kp LS(INSERT)  &kp LC(F9)                                 &trans             &trans                                                                      &mt HOME LC(LEFT)  &kp PAGE_DOWN  &kp PG_UP      &mt END LC(RIGHT)   &none          &macro_quote_pair
