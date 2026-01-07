@@ -265,14 +265,14 @@
         switch_to_windows: switch_to_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &to 0>;
+            bindings = <&out OUT_USB &to 1>;
             label = "SWITCH_TO_WINDOWS";
         };
 
         switch_to_linux: switch_to_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_USB &to 1>;
+            bindings = <&out OUT_BLE &to 0>;
             label = "SWITCH_TO_LINUX";
         };
 
