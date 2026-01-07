@@ -262,6 +262,20 @@
             label = "LINUX_HIDE_OTHERS";
         };
 
+        switch_to_windows: switch_to_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &to 0>;
+            label = "SWITCH_TO_WINDOWS";
+        };
+
+        switch_to_linux: switch_to_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_USB &to 1>;
+            label = "SWITCH_TO_LINUX";
+        };
+
         shift_caps_words: shift_caps_words {
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAPS_WORDS";
@@ -397,11 +411,11 @@
 
         mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                   &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                             &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none         &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                              &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &out OUT_TOG  &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                       &trans                  &none  &none  &none  &none  &none  &none
+&none            &none         &none         &none         &none         &none         &bootloader                                                 &bootloader             &none  &none  &none  &none  &none  &none
+&none            &none         &none         &none         &none         &none         &none             &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none  &none  &none  &none  &bl BL_INC
+&none            &none         &none         &none         &macro_ver    &none                                  &none      &none                                           &none  &none  &none  &none  &none  &bl BL_DEC
+&rgb_ug RGB_TOG  &none         &none         &none         &none                       &switch_to_linux  &none  &none      &none       &bl BL_TOG  &switch_to_windows             &none  &none  &none  &none  &bl BL_TOG
             >;
         };
 
