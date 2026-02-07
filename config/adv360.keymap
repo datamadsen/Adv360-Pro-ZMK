@@ -412,7 +412,7 @@
 &linux_resize_window  &kp LG(Q)      &kp LC(F4)     &kp LG(T)       &kp LC(R)       &kp LC(T)      &kp LG(LC(LA(N5)))                                                                  &kp PRINTSCREEN  &none              &none          &kp LC(LS(I))  &linux_hide_others  &kp LS(LC(P))  &smiley_linux
 &none                 &kp LC(A)      &none          &kp DELETE      &none           &kp LG(SPACE)  &kp LG(LC(LA(N6)))  &trans  &trans             &kp LG(LC(LEFT))  &kp LC(LG(RIGHT))  &none            &kp LEFT           &kp DOWN       &kp UP_ARROW   &kp RIGHT           &none          &none
 &kp LEFT_SHIFT        &kp LC(Z)      &kp LC(X)      &kp LC(INSERT)  &kp LS(INSERT)  &kp LG(V)                                  &trans             &trans                                                &mt HOME LC(LEFT)  &kp PAGE_DOWN  &kp PG_UP      &mt END LC(RIGHT)   &none          &macro_quote_pair
-&mkp MB4              &mkp MB5       &mkp RCLK      &mkp MCLK       &mkp LCLK                      &none               &none   &kp LC(LS(M))      &to 0             &kp DELETE         &kp LG(SPACE)                       &kp LG(H)      &none          &none               &none          &to 8
+&mkp MB4              &mkp MB5       &mkp RCLK      &mkp MCLK       &mkp LCLK                      &none               &none   &kp LC(LS(M))      &to 0             &kp DELETE         &kp LGUI                            &kp LG(H)      &none          &none               &none          &to 8
             >;
         };
 
