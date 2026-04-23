@@ -269,7 +269,7 @@
             label = "SWITCH_TO_WINDOWS";
         };
 
-        switch_to_linux: switch_to_linux {
+        switch_to_linux_bt: switch_to_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &to 0 &bt BT_SEL 1>;
@@ -281,6 +281,13 @@
             #binding-cells = <0>;
             bindings = <&kp COLON &kp MINUS &kp RPAR &kp LC(Z) &kp SPACE>;
             label = "SMILEY_LINUX";
+        };
+
+        switch_to_linux_wired: switch_to_linux_wired {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_USB &to 0 &bt BT_SEL 4>;
+            label = "SWITCH_TO_LINUX_WIRED";
         };
 
         shift_caps_words: shift_caps_words {
@@ -418,11 +425,11 @@
 
         mod {
             bindings = <
-&bt BT_SEL 4     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                       &trans                  &none  &none  &none  &none  &none  &none
-&none            &none         &none         &none         &none         &none         &bootloader                                                 &bootloader             &none  &none  &none  &none  &none  &none
-&none            &none         &none         &none         &none         &none         &out OUT_TOG      &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none  &none  &none  &none  &bl BL_INC
-&none            &none         &none         &none         &macro_ver    &none                                  &none      &none                                           &none  &none  &none  &none  &none  &bl BL_DEC
-&rgb_ug RGB_TOG  &none         &none         &none         &none                       &switch_to_linux  &none  &none      &none       &bl BL_TOG  &switch_to_windows             &none  &none  &none  &none  &bl BL_TOG
+&bt BT_SEL 4     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                                           &trans                  &none  &none  &none  &none  &none  &none
+&none            &none         &none         &none         &none         &none         &bootloader                                                                     &bootloader             &none  &none  &none  &none  &none  &none
+&none            &none         &none         &none         &none         &none         &out OUT_TOG         &none                   &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none  &none  &none  &none  &bl BL_INC
+&none            &none         &none         &none         &macro_ver    &none                                                      &none      &none                                           &none  &none  &none  &none  &none  &bl BL_DEC
+&rgb_ug RGB_TOG  &none         &none         &none         &none                       &switch_to_linux_bt  &switch_to_linux_wired  &none      &none       &bl BL_TOG  &switch_to_windows             &none  &none  &none  &none  &bl BL_TOG
             >;
         };
 
