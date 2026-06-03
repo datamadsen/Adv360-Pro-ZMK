@@ -204,30 +204,39 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "WIN_AA_ALT";
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N9>
-                , <&macro_release &kp LALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N9>,
+                <&macro_release>,
+                <&kp LALT>;
         };
 
         win_oe_alt: win_oe_alt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "WIN_OE_ALT";
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N8>
-                , <&macro_release &kp LALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N8>,
+                <&macro_release>,
+                <&kp LALT>;
         };
 
         win_ae_alt: win_ae_alt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "WIN_AE_ALT";
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N0>
-                , <&macro_release &kp LALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N0>,
+                <&macro_release>,
+                <&kp LALT>;
         };
 
         linux_move_window: linux_move_win {
@@ -316,7 +325,7 @@
         switch_to_linux_wired: switch_to_linux_wired {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_USB &to 0 &bt BT_SEL 4>;
+            bindings = <&out OUT_USB &to 0>;
             label = "SWITCH_TO_LINUX_WIRED";
         };
 
@@ -427,10 +436,10 @@
         Linux {
             label = "Linux";
             bindings = <
-&kp GRAVE       &kp N1  &kp N2  &kp N3    &kp N4    &kp N5  &lt 4 NUMBER_6                                                                                      &lt 4 NUMBER_7      &kp NUMBER_8  &kp NUMBER_9                                   &kp NUMBER_0                               &kp MINUS  &kp EQUAL      &none
-&kp TAB         &kp Q   &kp W   &kp E     &kp R     &kp T   &to 1                                                                                               &kp LG(L)           &kp Y         &kp U                                          &kp I                                      &kp O      &kp P          &kp BACKSLASH
-&kp CAPSLOCK    &kp A   &kp S   &kp D     &kp F     &kp G   &kp LG(W)       &kp LS(LA(LCTRL))  &kp LS(LA(LC(LGUI)))      &switch_to_linux_wired  &to 8          &kp LC(LA(DELETE))  &kp H         &kp J                                          &kp K                                      &kp L      &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C     &kp V     &kp B                                      &bl BL_TOG                &switch_to_linux_bt                                        &kp N         &kp M                                          &kp COMMA                                  &kp DOT    &kp FSLH       &kp RIGHT_SHIFT
+&kp GRAVE       &kp N1  &kp N2  &kp N3    &kp N4    &kp N5  &lt 4 NUMBER_6                                                                                      &lt 4 NUMBER_7      &kp NUMBER_8  &kp NUMBER_9                           &kp NUMBER_0                               &kp MINUS  &kp EQUAL      &none
+&kp TAB         &kp Q   &kp W   &kp E     &kp R     &kp T   &to 1                                                                                               &kp LG(L)           &kp Y         &kp U                                  &kp I                                      &kp O      &kp P          &kp BACKSLASH
+&kp CAPSLOCK    &kp A   &kp S   &kp D     &kp F     &kp G   &kp LG(W)       &kp LS(LA(LCTRL))  &kp LS(LA(LC(LGUI)))      &switch_to_linux_wired  &to 8          &kp LC(LA(DELETE))  &kp H         &kp J                                  &kp K                                      &kp L      &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C     &kp V     &kp B                                      &bl BL_TOG                &switch_to_linux_bt                                        &kp N         &kp M                                  &kp COMMA                                  &kp DOT    &kp FSLH       &kp RIGHT_SHIFT
 &kp LCTRL       &mo 6   &none   &kp LGUI  &kp LALT          &mo 3           &kp RA(O)          &kp LCMD                  &switch_to_windows      &kp BACKSPACE  &kp SPACE                         &holdtap_altgr RIGHT_ALT LEFT_BRACKET  &holdtap_tap_preferred LGUI RIGHT_BRACKET  &none      &none          &mt RCTRL ENTER
             >;
         };
@@ -438,10 +447,10 @@
         windows {
             label = "Windows";
             bindings = <
-&kp GRAVE       &kp N1  &kp N2  &kp N3    &kp N4        &kp N5  &lt 4 NUMBER_6                                                                                           &lt 4 NUMBER_7      &kp NUMBER_8  &kp NUMBER_9                                   &kp NUMBER_0                             &kp MINUS  &kp EQUAL      &none
-&kp TAB         &kp Q   &kp W   &kp E     &kp R         &kp T   &to 0                                                                                                    &kp LG(L)           &kp Y         &kp U                                          &kp I                                    &kp O      &kp P          &kp BACKSLASH
-&kp ESC         &kp A   &kp S   &kp D     &kp F         &kp G   &f13_app_sw_windows  &kp LS(LA(LCTRL))  &kp LS(LA(LC(LGUI)))      &switch_to_linux_wired  &to 8          &kp LC(LA(DELETE))  &kp H         &kp J                                          &kp K                                    &kp L      &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C     &kp V         &kp B                                           &none                     &switch_to_linux_bt                                        &kp N         &kp M                                          &kp COMMA                                &kp DOT    &kp FSLH       &kp RIGHT_SHIFT
+&kp GRAVE       &kp N1  &kp N2  &kp N3    &kp N4        &kp N5  &lt 4 NUMBER_6                                                                                           &lt 4 NUMBER_7      &kp NUMBER_8  &kp NUMBER_9                           &kp NUMBER_0                             &kp MINUS  &kp EQUAL      &none
+&kp TAB         &kp Q   &kp W   &kp E     &kp R         &kp T   &to 0                                                                                                    &kp LG(L)           &kp Y         &kp U                                  &kp I                                    &kp O      &kp P          &kp BACKSLASH
+&kp ESC         &kp A   &kp S   &kp D     &kp F         &kp G   &f13_app_sw_windows  &kp LS(LA(LCTRL))  &kp LS(LA(LC(LGUI)))      &switch_to_linux_wired  &to 8          &kp LC(LA(DELETE))  &kp H         &kp J                                  &kp K                                    &kp L      &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C     &kp V         &kp B                                           &none                     &switch_to_linux_bt                                        &kp N         &kp M                                  &kp COMMA                                &kp DOT    &kp FSLH       &kp RIGHT_SHIFT
 &kp LCTRL       &mo 6   &none   &kp LWIN  &kp LEFT_ALT          &mo 2                &mo 5              &kp LCMD                  &switch_to_windows      &kp BACKSPACE  &kp SPACE                         &holdtap_altgr RIGHT_ALT LEFT_BRACKET  &holdtap_danish RIGHT_GUI RIGHT_BRACKET  &mo 10     &none          &kp ENTER
             >;
         };
@@ -529,9 +538,9 @@
         danish_win {
             label = "DanishWin";
             bindings = <
-&trans  &trans       &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans       &trans       &trans
-&trans  &trans       &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &win_oe_alt   &trans       &trans
-&trans  &win_aa_alt  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &win_ae_alt  &trans
+&trans  &trans       &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans       &trans       &trans
+&trans  &trans       &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &win_oe_alt  &trans       &trans
+&trans  &win_aa_alt  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans       &win_ae_alt  &trans
 &trans  &trans       &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans       &trans       &trans
 &trans  &trans       &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans       &trans       &trans
             >;
