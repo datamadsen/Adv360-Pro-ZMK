@@ -451,7 +451,7 @@
 &kp TAB         &kp Q   &kp W   &kp E     &kp R         &kp T   &to 0                                                                                                    &kp LG(L)           &kp Y         &kp U                                  &kp I                                    &kp O      &kp P          &kp BACKSLASH
 &kp ESC         &kp A   &kp S   &kp D     &kp F         &kp G   &f13_app_sw_windows  &kp LS(LA(LCTRL))  &kp LS(LA(LC(LGUI)))      &switch_to_linux_wired  &to 8          &kp LC(LA(DELETE))  &kp H         &kp J                                  &kp K                                    &kp L      &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C     &kp V         &kp B                                           &none                     &switch_to_linux_bt                                        &kp N         &kp M                                  &kp COMMA                                &kp DOT    &kp FSLH       &kp RIGHT_SHIFT
-&kp LCTRL       &mo 6   &none   &kp LWIN  &kp LEFT_ALT          &mo 2                &mo 5              &kp LCMD                  &switch_to_windows      &kp BACKSPACE  &kp SPACE                         &holdtap_altgr RIGHT_ALT LEFT_BRACKET  &holdtap_danish RIGHT_GUI RIGHT_BRACKET  &mo 10     &none          &kp ENTER
+&kp LCTRL       &mo 6   &none   &kp LWIN  &kp LEFT_ALT          &mo 2                &mo 5              &kp LCMD                  &switch_to_windows      &kp BACKSPACE  &kp SPACE                         &holdtap_altgr RIGHT_ALT LEFT_BRACKET  &holdtap_danish RIGHT_GUI RIGHT_BRACKET  &mo 10     &kp RCTRL      &kp ENTER
             >;
         };
 
